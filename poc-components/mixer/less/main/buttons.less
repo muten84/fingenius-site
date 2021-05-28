@@ -1,0 +1,143 @@
+/*-----------------------------------------------------------------------------------*/
+/* Theme Button
+/*-----------------------------------------------------------------------------------*/
+@btn_padding: 8px 30px;
+@btn_fontSize: 18px;
+@btn_color : @white;
+@btn_background: #f16543;
+@btn_hover_background: #d94825;
+@btn_focus_background: #ce3814;
+
+.view-more,
+.theme-btn {
+  display: inline-block;
+  .theme-transition;
+}
+
+.view-more {
+  margin-top: 40px;
+  background-color: @white;
+  color: #f16543;
+  padding: 13px 42px;
+}
+
+.btn-mixer {
+  font-size: @btn_fontSize;
+  padding: @btn_padding;
+  color: @btn_color;
+  line-height: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: @btn_background;
+  &.current,
+  &:hover,
+  &:focus {
+    color: @btn_color;
+  }
+  &.current,
+  &:hover {
+    background-color: @btn_hover_background;
+  }
+
+  &.pressed,
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: @btn_focus_background;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Button Colors
+/*-----------------------------------------------------------------------------------*/
+.btn-green {
+  @btn_background: #9eb21a;
+  @btn_hover_background: #7c8d0b;
+  @btn_focus_background: #626f08;
+  .btn-mixer;
+  background-color: @btn_background;
+  &.current,
+  &:hover {
+    background-color: @btn_hover_background;
+  }
+  &.pressed,
+  &:active,
+  &:focus {
+    background-color: @btn_focus_background;
+  }
+}
+
+.btn-grey {
+  @btn_background: #848484;
+  @btn_hover_background: #5b5b5b;
+  @btn_focus_background: #414141;
+  .btn-mixer;
+  background-color: @btn_background;
+  &.current,
+  &:hover {
+    background-color: @btn_hover_background;
+  }
+  &.pressed,
+  &:active,
+  &:focus {
+    background-color: @btn_focus_background;
+  }
+}
+
+.btn-light-grey {
+  @btn_background: #ababab;
+  @btn_hover_background: #929292;
+  @btn_focus_background: #6a6a6a;
+  .btn-mixer;
+  background-color: @btn_background;
+  &.current,
+  &:active,
+  &:hover {
+    background-color: @btn_hover_background;
+  }
+  &.pressed,
+  &:active,
+  &:focus {
+    background-color: @btn_focus_background;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Button Sizes
+/*-----------------------------------------------------------------------------------*/
+.btn-standard {
+  width: 220px;
+}
+
+.btn-mini {
+  @paddingMini: 4px 20px;
+  @fontSizeMini: 14px;
+  padding: @paddingMini;
+  font-size: @fontSizeMini;
+}
+
+.btn-small {
+  @paddingSmall: 6px 25px;
+  @fontSizeSmall: 16px;
+  padding: @paddingSmall;
+  font-size: @fontSizeSmall;
+}
+
+.btn-large {
+  @paddingLarge: 9px 35px;
+  @fontSizeLarge: 20px;
+  padding: @paddingLarge;
+  font-size: @fontSizeLarge;
+}
+
+.btn-huge {
+  @paddingLarge: 12px 35px;
+  @fontSizeLarge: 24px;
+  padding: @paddingLarge;
+  font-size: @fontSizeLarge;
+}
+
+

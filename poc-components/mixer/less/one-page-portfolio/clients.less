@@ -1,0 +1,141 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Our Clients Section
+/*-----------------------------------------------------------------------------------*/
+@section_background_color : #e4eaef;
+.our-clients {
+  text-align: center;
+  background-color: @section_background_color;
+
+  .container {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+
+  .arrow .shape {
+    border-top-color: @section_background_color;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .separator {
+    margin: 5px 0 6px;
+  }
+
+}
+
+.client-section-carousel {
+  padding: 0 70px;
+
+  .owl-item .item {
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .owl-controls {
+    margin-top: 39px;
+    .owl-page {
+      span {
+        border-radius: 0;
+        width: 7px;
+        height: 7px;
+        margin: 2px 6px;
+        background-color: #7c858c;
+        opacity: 1;
+        &:hover {
+          background-color: @anchor_color;
+        }
+      }
+      &.active,
+      &:hover {
+        span {
+          background-color: @anchor_color;
+        }
+      }
+    }
+  }
+}
+
+.our-clients.variant-two {
+  background-color: @white;
+
+  .container {
+    padding-top: 30px;
+    padding-bottom: 75px;
+  }
+
+  .client-section-carousel .owl-controls {
+    margin-top: 30px;
+  }
+}
+
+.our-clients.variant-four {
+  background-color: #eee9e7;
+
+  .client-section-carousel {
+    padding: 0 2px;
+    overflow: hidden;
+  }
+
+  .arrow .shape {
+    border-top-color: #eee9e7;
+  }
+
+  header {
+    margin-bottom: 36px;
+    h3.title {
+      margin-bottom: 18px;
+    }
+  }
+
+  .owl-carousel .owl-wrapper-outer {
+    border-top: 1px solid #dad5d2;
+    padding-left: 1px;
+    margin-left: -4px;
+  }
+  .owl-wrapper {
+    padding-left: 1px;
+  }
+  .owl-item {
+    border-right: 1px solid #dad5d2;
+    margin: 0;
+    &:nth-child(5n) {
+      //      border-right: none;
+    }
+  }
+  #owl-demo .item {
+    padding: 0;
+  }
+
+  .owl-controls {
+    margin-top: 75px;
+    .owl-page {
+      span {
+        margin: 2px 6px;
+        .border-radius(100%);
+        border: 1px solid #c3bdba;
+        background: none;
+        width: 15px;
+        height: 15px;
+      }
+      &.active,
+      &:hover {
+        span {
+          border: 1px solid #f16543;
+          background: #f16543;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

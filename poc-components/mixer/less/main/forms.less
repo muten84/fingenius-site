@@ -1,0 +1,29 @@
+input,
+textarea {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  font-size: 18px;
+  color: @white;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 46px;
+  padding: 0 35px;
+  .theme-transition;
+  background-color: @anchor_color;
+  &:hover {
+    background-color: @heading_color;
+    border-color: @heading_color;
+  }
+}
+
+#message-sent {
+  color: #ffffff;
+}
+
+
+

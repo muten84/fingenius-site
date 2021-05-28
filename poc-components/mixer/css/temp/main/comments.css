@@ -1,0 +1,38 @@
+#comments .author-photo {
+    overflow: hidden;
+    float: left;
+    padding: 10px 0 0 10px;
+    width: 100px;
+}
+
+#comments .comment-wrapper {
+    float: left;
+    width: 670px;
+    padding: 0 40px;
+}
+
+#comments .depth-2 article {
+    margin-left: 130px;
+}
+
+#comments .depth-2 article .comment-wrapper {
+    width: 540px;
+}
+
+#comments .depth-3 article {
+    margin-left: 260px;
+}
+
+#comments .depth-3 article .comment-wrapper {
+    width: 410px;
+}
+
+#comments .depth-4 article,
+#comments .depth-5 article {
+    margin-left: 390px;
+}
+
+#comments .depth-4 article .comment-wrapper,
+#comments .depth-5 article .comment-wrapper {
+    width: 280px;
+}

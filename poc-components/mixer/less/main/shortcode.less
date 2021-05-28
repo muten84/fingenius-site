@@ -1,0 +1,335 @@
+/*-----------------------------------------------------------------------------------*/
+/* Features
+/*-----------------------------------------------------------------------------------*/
+
+// Dropcap
+.dropcap {
+  display: inline-block;
+  float: left;
+  color: #f04933;
+  font-size: 60px;
+  line-height: 36px;
+  padding-bottom: 5px;
+  margin-right: 8px;
+  margin-top: 5px;
+  &.invert {
+    color: @white;
+    background-color: #f04933;
+    padding: 0 4px 10px;
+    margin: 8px 8px 4px 0;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* First capital letter
+/*-----------------------------------------------------------------------------------*/
+
+.first-capital, .first-capital-invert {
+  font-size: 16px;
+  line-height: 30px;
+  &:first-letter {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 52px;
+    line-height: 40px;
+    float: left;
+    padding: 7px 8px 7px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.first-capital {
+  &:first-letter {
+    color: #f04933;
+  }
+}
+
+.first-capital-invert {
+  &:first-letter {
+    color: #ffffff;
+    background: #f04933;
+  }
+}
+
+.btn-animate {
+  transition: all .2s ease-in-out;
+}
+
+// Toggle and  Accordion
+@border_color : #E2E2E9;
+.toggle, .accordion {
+  margin-bottom: 30px;
+  padding-left: 0;
+  text-align: left;
+  dt {
+    transition: .5s all ease-in-out;
+    position: relative;
+    padding: 10px 35px 10px 18px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    color: @white;
+    cursor: pointer;
+    background-color: #f16543;
+    span {
+      transition: .5s all ease-in-out;
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 21px;
+      width: 11px;
+      height: 11px;
+      background: url(../images/plus-minus.png) no-repeat 0 0;
+    }
+    &.current {
+      color: #f16543;
+      background-color: #e9eef1;
+      margin-bottom: 0;
+      span {
+        background-position: center -45px;
+
+      }
+    }
+  }
+  dd {
+    display: none;
+    padding: 7px 20px 10px;
+    margin: 0 0 3px;
+    line-height: 21px;
+    background-color: #e9eef1;
+  }
+}
+
+// Tabs
+.tabs-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  li {
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 0;
+    list-style: none;
+    background-color: #f16543;
+    padding: 9px 34px;
+    text-align: center;
+    cursor: pointer;
+    a {
+      transition: .2s all ease-in-out;
+      color: @white;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    &:hover,
+    &.active {
+      background-color: #e9eef1;
+      .transition(background-color .1s);
+      a {
+        color: #404345;
+      }
+    }
+  }
+}
+
+.tabs-container {
+  margin: 0 0 30px;
+  display: block;
+  padding: 25px 20px;
+  background-color: #e9eef1;
+}
+
+.tab-skin {
+  .tabs-nav {
+    border-bottom: 1px solid #f16543;
+    li {
+      margin: 0;
+      background-color: transparent;
+      padding: 12px 18px;
+      a {
+        color: #6f7375;
+      }
+      &:hover,
+      &.active {
+        background-color: #f16543;
+        a {
+          color: @white;
+        }
+      }
+    }
+  }
+  .tabs-container {
+    background-color: transparent;
+  }
+}
+
+// Notification
+.notification(@backgroundColor) {
+  background-color: @backgroundColor;
+  color: @white;
+  padding: 10px 50px 10px 18px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+}
+
+p {
+  .icon-remove {
+    display: inline-block;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    .border-radius(50%);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+    i {
+      color: @white;
+      line-height: 25px;
+    }
+  }
+  &.info {
+    @notification_color: #5aa8d8;
+    .notification(@notification_color);
+    .icon-remove {
+      background-color: darken(@notification_color, 15%);
+    }
+  }
+  &.success {
+    @notification_color: #86c379;
+    .notification(@notification_color);
+    .icon-remove {
+      background-color: darken(@notification_color, 15%);
+    }
+  }
+  &.tip {
+    @notification_color: #d5a626;
+    .notification(@notification_color);
+    .icon-remove {
+      background-color: darken(@notification_color, 15%);
+    }
+  }
+  &.error {
+    @notification_color: #e83a40;
+    .notification(@notification_color);
+    .icon-remove {
+      background-color: darken(@notification_color, 15%);
+    }
+  }
+}
+
+// Price Plans
+.price-plan {
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+
+  .plan-title {
+    text-transform: uppercase;
+    position: absolute;
+    top: -13px;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    width: 130px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    background-color: #f8fbfc;
+    .box-shadow(0px 1px 1px 0px rgba(40, 40, 40, 0.22));
+  }
+  .plan-price {
+    display: block;
+    text-align: center;
+    height: 210px;
+    width: 100%;
+    color: @heading_color;
+    background-color: #f0f4f6;
+    font-weight: 700;
+
+    .price-show {
+      line-height: 225px;
+      font-size: 72px;
+
+    }
+    .currency {
+      font-size: 24px;
+      vertical-align: top;
+      line-height: 190px;
+      margin-left: -14px;
+    }
+
+  }
+  .plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 53px;
+    border-bottom: 1px solid #e9eef1;
+    li {
+      padding: 13px 0;
+      border-top: 1px solid #e9eef1;
+      font-size: 14px;
+      &:nth-child(2n-1) {
+        background-color: #fafcfc;
+      }
+    }
+  }
+
+  .buy-now-btn {
+    color: @white;
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    background-color: @heading_color;
+    &:hover {
+      background-color: @anchor_color;
+      color: #ffffff;
+    }
+  }
+}
+
+.price-plan.special {
+  .plan-price,
+  .buy-now-btn {
+    background-color: #f16543;
+  }
+  .buy-now-btn {
+    &:hover {
+      background-color: @heading_color;
+    }
+  }
+  .plan-title {
+    color: #f16543;
+    background-color: @white;
+    .box-shadow(0px 1px 1px 0px rgba(40, 40, 40, 0.34));
+  }
+  .plan-price {
+    .currency {
+    }
+
+    .price-show {
+      color: #ffffff;
+      font-size: 120px;
+
+    }
+    .currency {
+      color: #ffffff;
+      line-height: 160px;
+    }
+  }
+
+}
+
+.shortcodes-btn {
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

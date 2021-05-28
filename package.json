@@ -1,0 +1,22 @@
+{
+  "name": "fingenius-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muten84/fingenius-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muten84/fingenius-site/issues"
+  },
+  "homepage": "https://github.com/muten84/fingenius-site#readme",
+  "devDependencies": {
+    "create-next-app": "^10.2.3"
+  }
+}
