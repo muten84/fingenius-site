@@ -1,0 +1,135 @@
+/*-----------------------------------------------------------------------------------*/
+/* Responsive: Large desktop and up
+/*-----------------------------------------------------------------------------------*/
+@media (max-width: 1199px) {
+    /*-----------------------------------------------------------------------------------*/
+    /*  Layout
+    /*-----------------------------------------------------------------------------------*/
+    .page-container {
+        padding-bottom: 50px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  Home FlexSlider
+    /*-----------------------------------------------------------------------------------*/
+    .slide-description h2 {
+        font-size: 42px;
+        line-height: 48px;
+        padding: 13px 15px 10px;
+    }
+
+    .slide-description p span {
+        padding: 13px 15px;
+    }
+
+    .flexslider.variant-two .slide-description p {
+        font-size: 14px;
+    }
+
+    .flexslider.variant-two .slide-description a {
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  Blog
+    /*-----------------------------------------------------------------------------------*/
+    .blog-article .post-meta {
+        margin-right: 15px;
+    }
+
+    .blog-article .post-meta ul {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .blog-article .post-summary {
+        padding-right: 0;
+    }
+
+    #comments .comment-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #comments .depth-2 article {
+        margin-left: 130px;
+    }
+
+    #comments .depth-2 article .comment-wrapper {
+        width: 540px;
+    }
+
+    #comments .depth-3 article {
+        margin-left: 260px;
+    }
+
+    #comments .depth-3 article .comment-wrapper {
+        width: 410px;
+    }
+
+    #comments .depth-4 article,
+    #comments .depth-5 article {
+        margin-left: 390px;
+    }
+
+    #comments .depth-4 article .comment-wrapper,
+    #comments .depth-5 article .comment-wrapper {
+        width: 280px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  Tabbed Widget
+    /*-----------------------------------------------------------------------------------*/
+    .widget .tabbed .tabs li {
+        font-size: 14px;
+    }
+
+    .widget-list li figure {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /* Author Section
+    /*-----------------------------------------------------------------------------------*/
+    .bio-detail {
+        width: 77%;
+        padding: 20px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /* Single Portfolio Page
+    /*-----------------------------------------------------------------------------------*/
+    .single-project article {
+        padding: 40px 50px 0;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  Services
+    /*-----------------------------------------------------------------------------------*/
+    .services-items-wrapper article .content-wrapper {
+        padding: 15px 15px 0 15px;
+    }
+
+    .services-sidebar .services-item {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /*-----------------------------------------------------------------------------------*/
+    /*  Contact Page
+    /*-----------------------------------------------------------------------------------*/
+    #map_canvas {
+        height: 470px;
+    }
+
+    .contacts-list {
+        margin-right: -100px;
+    }
+
+    .contacts-list li {
+        margin-right: 100px;
+    }
+}

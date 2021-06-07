@@ -1,0 +1,86 @@
+/*-----------------------------------------------------------------------------------*/
+/* Table
+/*-----------------------------------------------------------------------------------*/
+table {
+  width: 100%;
+  border-top: 1px solid #d4dbdf;
+  background-color: #f1f5f7;
+  margin-bottom: 40px;
+  caption {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #f16543;
+    h2, h3, h4, h5, h6 {
+      color: inherit;
+      margin-bottom: 0;
+    }
+  }
+
+  th {
+    font-size: 16px;
+    color: #484d50;
+    font-weight: 700;
+    padding: 14px 29px;
+    border: 1px solid #bec7cc;
+  }
+
+  td {
+    font-size: 14px;
+    color: #5c6164;
+    padding: 8px 29px;
+    border: 1px solid #d4dbdf;
+  }
+
+}
+
+.table {
+  margin-bottom: 40px;
+  border: 1px solid #d4dbdf;
+  thead > tr > th,
+  tbody > tr > th,
+  tfoot > tr > th,
+  thead > tr > td,
+  tbody > tr > td,
+  tfoot > tr > td {
+    border: none;
+    border-top: 1px solid #d4dbdf;
+    padding: 8px 29px;
+  }
+}
+
+.table-outlined {
+  background-color: transparent;
+}
+
+.table-striped {
+  td {
+    border-color: #bec7cc;
+  }
+  > tbody > tr:nth-child(odd) > td {
+    background: #d4dbdf;
+  }
+}
+
+table {
+  a {
+    transition: .2s all ease-in-out;
+    color: @anchor_color;
+    &:hover {
+      color: @text-color;
+    }
+  }
+
+}
+
+dl {
+  a {
+    transition: .2s all ease-in-out;
+    color: @anchor_color;
+    &:hover {
+      color: @text-color;
+    }
+  }
+
+}

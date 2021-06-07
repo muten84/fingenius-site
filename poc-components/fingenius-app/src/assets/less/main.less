@@ -1,0 +1,92 @@
+/*-----------------------------------------------------------------------------------
+[table of contents]
+
+1. Body
+
+2. Header / .header-wrapper
+
+3. Main Navigation / (.variant-one, .variant-two, .variant-three, .variant-four)
+
+4. Logo / #logo
+
+5. Home Slider
+
+   5.1 Index page main slider / .flexslider.variant-one
+
+   5.2 Variation two main slider / .flexslider.variant-two
+
+   5.3 Variation three main slider / .home-slider-4
+
+6. Our Team / .our-team
+
+7. Clients / .our-clients
+
+8. Testimonials / .testimonial
+
+9. Filter / #filter-by
+
+10. Home Page Blog Section / .our-blog
+
+11. Side Bar / .sidebar
+
+12. Contact Form / .contact-form
+
+13. Follow Us / .follow-us
+
+14. Footer / .footer
+-----------------------------------------------------------------------------------*/
+
+@body_color : #7d8489;
+@anchor_color : #f16543;
+@heading_color : #373c40;
+@anchor_hover_color : @heading_color;
+@heading_hover_color : @anchor_color;
+
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "main/theme-core";
+@import "main/common";
+@import "main/wp-core";
+@import "main/isotope";
+@import "main/pagination";
+@import "main/buttons";
+@import "main/forms";
+@import "main/widget";
+@import "main/layout";
+@import "main/slider";
+@import "main/header";
+@import "main/shortcode";
+@import "main/list-group";
+@import "main/tables";
+@import "main/footer";
+
+// Include individual pages styles
+@import "main/breadcrumbs";
+@import "pages/page-header";
+@import "pages/purchase-now";
+@import "pages/blog";
+@import "main/comments";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/portfolio";
+@import "pages/faq";
+@import "pages/404";
+@import "pages/services";
+
+// Include one page portfolio one-page-portfolio styles
+@import "one-page-portfolio/about";
+@import "one-page-portfolio/features";
+@import "one-page-portfolio/team";
+@import "one-page-portfolio/clients";
+@import "one-page-portfolio/testimonial";
+@import "one-page-portfolio/services";
+@import "one-page-portfolio/services-list";
+@import "one-page-portfolio/work";
+@import "one-page-portfolio/blog";
+@import "one-page-portfolio/follow";
+@import "one-page-portfolio/contact-details";
+@import "one-page-portfolio/contact";
+@import "one-page-portfolio/shop";
+
+// Include custom responsive styles
+@import "responsive/custom-responsive";

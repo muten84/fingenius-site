@@ -1,0 +1,118 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Pagination
+/*-----------------------------------------------------------------------------------*/
+@pagination_bg_color : #dbdde8;
+.pagination {
+  margin: 27px 0;
+  text-align: center;
+  width: 100%;
+  span,
+  a {
+    display: inline-block;
+    color: @white;
+    font-size: 15px;
+    line-height: 32px;
+    background-color: #636363;
+    padding: 4px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2px;
+    &.next,
+    &.previous {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &:focus {
+      outline: 0;
+      text-decoration: none;
+    }
+    &.current,
+    &:hover {
+      color: @white;
+      background-color: #f16543;
+    }
+  }
+}
+
+.pagination.inverted {
+  span,
+  a {
+    background-color: #f16543;
+    &.current,
+    &:hover {
+      background-color: #636363;
+    }
+    &.previous,
+    &.next {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}
+
+.pagination.outlined {
+  span,
+  a {
+    color: #777777;
+    background-color: transparent;
+    border: 2px solid #636363;
+    padding: 2px 15px;
+    &.next,
+    &.previous {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    &.current,
+    &:hover {
+      color: #e34732;
+      border-color: #e34732;
+      background-color: transparent;
+    }
+  }
+}
+
+.section {
+  .pagination {
+    span,
+    a {
+      background-color: transparent;
+      padding: 20px 16px;
+      line-height: 0;
+      color: #61676c;
+      border: 1px solid #cad3db;
+      border-right: none;
+      background-repeat: no-repeat;
+      &:last-child {
+        border-right: 1px solid #cad3db;
+      }
+      &.next,
+      &.prev {
+        float: none;
+        background-image: url("../images/slider-nav-2.png");
+        background-position: 18px center;
+        text-indent: -9999px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      &.next {
+        background-position: -89px center;
+      }
+      &:focus,
+      &.active,
+      &:hover {
+        outline: 0;
+        background-color: #cad3db;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.page-nav-btns {
+  text-align: left;
+  a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

@@ -1,0 +1,238 @@
+/*-----------------------------------------------------------------------------------*/
+/* Our Address Details Section
+/*-----------------------------------------------------------------------------------*/
+@section_background_color : #e5eaef;
+.contact-details {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .section-header p {
+    font-size: 16px;
+  }
+
+  .icon-pin {
+    display: block;
+    width: 100%;
+    height: 56px;
+    background: url("../images/icon-pin.png") no-repeat center 0;
+    margin-bottom: 20px;
+  }
+
+  .inner-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .inner-wrapper,
+  #map_canvas {
+    height: 585px;
+  }
+
+  .contact-details-container,
+  .google-map-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-details-container {
+    padding-top: 100px;
+    z-index: 200;
+  }
+
+  .google-map-wrapper {
+    z-index: 100;
+  }
+
+}
+
+@section_border_color: #bcc3c9;
+.contact-details-list {
+  border-bottom: 1px solid @section_border_color;
+  border-right: 1px solid @section_border_color;
+  display: inline-block;
+  li {
+    float: left;
+    color: #373c40;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    border-top: 1px solid @section_border_color;
+    border-left: 1px solid @section_border_color;
+    padding: 28px 0px;
+    width: 257px;
+    word-wrap: break-word;
+    a {
+      color: @heading_color;
+      &:hover {
+        color: @anchor_color;
+      }
+    }
+    i {
+      display: block;
+      width: 100%;
+      height: 32px;
+      margin-bottom: 12px;
+    }
+    .icon-telephone {
+      background: url("../images/icon-telephone.png") no-repeat center 0;
+    }
+    .icon-fax {
+      background: url("../images/icon-fax.png") no-repeat center 0;
+    }
+    .icon-mail {
+      background: url("../images/icon-mail.png") no-repeat center 0;
+    }
+
+  }
+}
+
+.contact-details.variant-three {
+  background: #674296;
+  padding-top: 130px;
+  padding-bottom: 0;
+  height: auto;
+
+  .section-header {
+    h2.title {
+      color: @white;
+    }
+    p {
+      color: #b297d4;
+    }
+  }
+
+  span.line {
+    background-color: #744da7;
+  }
+
+  .contact-details-list {
+    border: none;
+    li {
+      a {
+        color: @white;
+        &:hover {
+          color: #2F0B5C;
+        }
+      }
+      border: none;
+      color: @white;
+      &.fax {
+        border-left: 1px solid #744da7;
+        border-right: 1px solid #744da7;
+      }
+      .icon-telephone {
+        background-image: url("../images/icon-telephone-2.png");
+      }
+      .icon-fax {
+        background-image: url("../images/icon-fax-2.png");
+      }
+      .icon-mail {
+        background-image: url("../images/icon-mail-2.png");
+      }
+    }
+  }
+}
+
+.contact-details.variant-four {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: url('../images/temp/map2.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+
+  .icon-pin {
+    margin-bottom: 2px;
+  }
+
+  .section-header {
+    padding-top: 83px;
+    h2.title {
+      margin-bottom: 55px;
+    }
+  }
+
+  address {
+    display: inline-block;
+    width: 63.5%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    background-color: #373c40;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 46%;
+      border-width: 0 0 35px 30px;
+      border-style: solid;
+      border-color: transparent #373c40;
+    }
+  }
+  .wrapper-contact-detail {
+    background: #ffffff;
+  }
+
+  .contact-details-list {
+    border-right: 1px solid #e4dedb;
+    width: 100%;
+    background-color: @white;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    li {
+      float: none;
+      border: none;
+      width: 100%;
+      overflow: hidden;
+      border-bottom: 1px solid #e4dedb;
+      color: #534f4d;
+      padding: 40px 0;
+      line-height: 90px;
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        color: @heading_color;
+        &:hover {
+          color: @anchor_color;
+        }
+      }
+      i {
+        margin: auto;
+        float: right;
+        width: 100px;
+        height: 100px;
+        background-color: #eee9e7;
+        background-position: center center;
+        .border-radius(100%);
+      }
+      span {
+        float: left;
+      }
+      .icon-telephone {
+        background-image: url("../images/icon-telephone-3.png");
+      }
+      .icon-fax {
+        background-image: url("../images/icon-fax-3.png");
+      }
+      .icon-mail {
+        background-image: url("../images/icon-mail-3.png");
+      }
+    }
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* google map custom controls
+/*-----------------------------------------------------------------------------------*/
+.gmnoprint, .gm-style-cc {
+  display: none;
+}

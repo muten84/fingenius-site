@@ -1,0 +1,246 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Contact us Section
+/*-----------------------------------------------------------------------------------*/
+.contact-us {
+  background-color: #f16543;
+
+  .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .section-header {
+    margin-bottom: 70px;
+    .title {
+      color: @white;
+    }
+    p {
+      color: #ffad99;
+      font-size: 16px;
+    }
+  }
+
+  .separator .line {
+    background-color: #d6593b;
+  }
+
+  .contact-form {
+    margin: auto 200px;
+
+    ::-webkit-input-placeholder {
+      color: #ffad99;
+    }
+    ::-moz-placeholder {
+      color: #ffad99;
+    }
+    /* firefox 19+ */
+    :-ms-input-placeholder {
+      color: #ffad99;
+    }
+    /* ie */
+    input:-moz-placeholder {
+      color: #ffad99;
+    }
+    input {
+      border: 1px solid transparent;
+      transition: .2s all ease-in-out;
+      &:focus {
+        color: #ffffff;
+        border-color: #ffffff;
+      }
+
+    }
+
+    input,
+    textarea {
+      color: #ffad99;
+      background-color: #cf5537;
+      height: 43px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    textarea {
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      resize: none;
+      width: 100%;
+      height: 151px;
+      border: 1px solid transparent;
+      transition: .2s all ease-in-out;
+      &:focus {
+        color: #ffffff;
+        border-color: #ffffff;
+      }
+    }
+    p {
+      overflow: hidden;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    #email,
+    #name {
+      width: 48%;
+    }
+    #name {
+      float: left;
+    }
+    #email {
+      float: right;
+    }
+    #subject {
+      width: 100%;
+    }
+    #submit {
+      font-size: 14px;
+      color: @white;
+      background: none;
+      border: 2px solid @white;
+      padding: 3px 33px 1px;
+      float: right;
+      &:hover {
+        background-color: #cf5537;
+        border-color: #cf5537;
+      }
+    }
+
+    #contact-loader {
+      display: none;
+      margin: 9px 10px 0 0;
+    }
+
+    input.error,
+    textarea.error {
+      border: 1px solid @white;
+    }
+  }
+
+  .status-wrapper {
+    float: left;
+  }
+
+  .submit-and-loader {
+    float: right;
+  }
+
+  .error-container {
+    display: none;
+    label.error {
+      font-weight: 500;
+      color: @white;
+      display: block;
+    }
+  }
+
+  #message-sent {
+    display: none;
+  }
+
+}
+
+.contact-us.variant-three {
+  background-color: #674296;
+
+  .contact-form #contact-loader {
+    margin: 15px 10px 0 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #afa0c3;
+  }
+  ::-moz-placeholder {
+    color: #afa0c3;
+  }
+  /* firefox 19+ */
+  :-ms-input-placeholder {
+    color: #afa0c3;
+  }
+  /* ie */
+  input:-moz-placeholder {
+    color: #afa0c3;
+  }
+
+  .section-header {
+    h2.title {
+      font-size: 48px;
+    }
+    p {
+      color: #b297d4;
+    }
+  }
+
+  span.line {
+    background-color: #744da7;
+  }
+
+  input,
+  textarea {
+    color: #afa0c3;
+    background-color: @white;
+    &:focus {
+      color: #373c40;
+    }
+  }
+  textarea {
+    display: block;
+  }
+
+  #submit {
+    background: #e76c99;
+    border-color: #e76c99;
+    &:hover {
+      background-color: #532a87;
+      border-color: #532a87;
+    }
+  }
+
+  input.error,
+  textarea.error {
+    border-color: #e76c99;
+  }
+
+}
+
+.contact-us.variant-four {
+  .contact-form #contact-loader {
+    margin: 15px 10px 0 0;
+  }
+
+  .section-header {
+    h2.title {
+      margin-bottom: 15px;
+    }
+  }
+
+  ::-webkit-input-placeholder {
+    color: #a0a0a0;
+  }
+  ::-moz-placeholder {
+    color: #a0a0a0;
+  }
+  /* firefox 19+ */
+  :-ms-input-placeholder {
+    color: #a0a0a0;
+  }
+  /* ie */
+  input:-moz-placeholder {
+    color: #a0a0a0;
+  }
+
+  input,
+  textarea {
+    color: #a0a0a0;
+    background-color: @white;
+    &:focus {
+      color: #080808;
+    }
+  }
+
+  input.error,
+  textarea.error {
+    border-color: #ff0000;
+    box-shadow: inset 0 0 1px 1px #ff0000;
+  }
+
+}
+

@@ -1,0 +1,433 @@
+/*-----------------------------------------------------------------------------------*/
+/* Responsive: Large desktop and up
+/*-----------------------------------------------------------------------------------*/
+@media (max-width: 1199px) {
+  /*-----------------------------------------------------------------------------------*/
+  /*  Header
+  /*-----------------------------------------------------------------------------------*/
+  .custom-container-header {
+    width: 945px;
+  }
+
+  .header-wrapper {
+
+    &.variant-two {
+      .contact-card {
+        .email {
+          margin-right: 5px;
+        }
+        .phone-number {
+          margin-right: 5px;
+        }
+      }
+
+      .main-menu {
+        > ul > li {
+          margin-right: 6px;
+          &:last-child {
+            margin-right: 0;
+          }
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+      .social_networks li a {
+        width: 27px;
+        border-left-color: transparent;
+      }
+    }
+
+    &.variant-three {
+      .main-menu ul > li > a {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .contact-card .contact-options .phone-number {
+        margin-right: 10px;
+      }
+      .social_networks {
+        li {
+          a {
+            width: 38px;
+          }
+        }
+      }
+
+    }
+
+    &.variant-four {
+      .contact-card .email {
+        margin-right: 7px;
+      }
+
+      .main-menu ul li {
+        margin: 0 0 0 4px;
+      }
+
+      .main-menu ul li a {
+        padding-left: 3px;
+        padding-right: 3px;
+        font-size: 12px;
+      }
+
+      .main-menu ul li:hover > a {
+        border: none;
+        background: none;
+      }
+
+      .contact-card {
+        .contact-options {
+          font-size: 12px;
+        }
+        .email {
+        }
+      }
+      .social_networks {
+        li {
+          a {
+            margin-left: 0;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .our-services.variant-three .container {
+    padding-bottom: 0;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Home FlexSlider
+  /*-----------------------------------------------------------------------------------*/
+  .custom-container-slide {
+    width: 910px;
+  }
+
+  .custom-margin-slider {
+    margin: 55px 0;
+  }
+
+  .slide-description {
+    left: 100px;
+  }
+
+  .home-slider {
+    height: 650px;
+  }
+
+  .flexslider {
+    .slide-description {
+      h2 {
+        font-size: 42px;
+        line-height: 48px;
+        padding: 13px 15px 10px;
+      }
+      p,
+      a {
+        font-size: 14px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      a {
+        padding: 10px 20px;
+      }
+    }
+    &.variant-two {
+      .slide-description {
+        a {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &.variant-three {
+      .slide-description {
+        padding: 0 100px;
+        h2 {
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  One Page portfolio
+  /*-----------------------------------------------------------------------------------*/
+  .welcome-section {
+    h1 {
+      font-size: 42px;
+      line-height: 48px;
+    }
+    .container {
+      padding-top: 80px;
+    }
+  }
+
+  // About us
+  .about-us {
+    .container {
+      padding-bottom: 60px;
+    }
+
+    &.variant-two .container {
+      padding-top: 63px;
+      padding-bottom: 0;
+    }
+
+  }
+
+  // Features
+  .features {
+    .container {
+      padding-bottom: 50px;
+    }
+
+    &.variant-two .container {
+      padding-top: 75px;
+      padding-bottom: 55px;
+    }
+  }
+
+  // Team
+  .our-team .container {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .team-member .social_networks li a {
+    width: 44px;
+  }
+
+  .our-team.variant-four .member-info {;
+    height: 132px;
+  }
+
+  // Clients
+  .client-section-carousel {
+    padding: 0;
+  }
+
+  .our-clients .variant-four .owl-item {
+    border: none;
+  }
+
+  .our-clients .variant-four .owl-controls {
+    margin-top: 40px;
+  }
+
+  // Testimonial
+  .follow-us,
+  .testimonial {
+    .flexslider {
+      li .container {
+      }
+    }
+  }
+
+  .follow-us.variant-four .flexslider .flex-viewport ul li .custom-container-follow {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 800px;
+
+  }
+
+  .follow-us.variant-four i.icon-twitter {
+    width: 100px;
+    height: 100px;
+    margin: 40px 30px 0 0;
+  }
+
+  // Services
+  .our-services {
+    .container {
+      padding-bottom: 80px;
+    }
+    .services-list {
+      padding-top: 0;
+      li:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .inner-contents {
+      padding-top: 70px;
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    &.variant-two {
+      .container {
+        padding-top: 80px;
+      }
+      .list-large-arrow-bullet {
+        ul {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  // Work
+  .our-work {
+
+    .container {
+    }
+
+    #filter-by {
+      border: none;
+      a {
+        border: 1px solid #cad3db;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 1px;
+        &:last-child {
+          border-right: 1px solid #cad3db;
+        }
+      }
+    }
+    .gallery-item img {
+      width: 100%;
+    }
+  }
+
+  .our-work .portfolio-response.container {
+    padding-bottom: 0;
+  }
+
+  // Blog
+  .post-grid-2-col {
+    display: none;
+  }
+
+  // Contact
+  .contact-us .contact-form {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Layout
+  /*-----------------------------------------------------------------------------------*/
+  .page-container {
+    padding-bottom: 50px;
+  }
+
+  .page-container .page-header {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-item-filter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Blog
+  /*-----------------------------------------------------------------------------------*/
+  .blog-article {
+    .post-meta {
+      margin-right: 15px;
+      ul {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    .post-summary {
+      padding-right: 0;
+    }
+  }
+
+  #comments {
+
+    .comment {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .comment-wrapper {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .depth-2 article {
+      margin-left: 120px;
+    }
+
+    .depth-3 article,
+    .depth-4 article,
+    .depth-5 article {
+      margin-left: 240px;
+    }
+
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /* work 4 slider
+  /*-----------------------------------------------------------------------------------*/
+  .projects-showcase {
+    .title {
+      font-size: 29px;
+    }
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Tabbed Widget
+  /*-----------------------------------------------------------------------------------*/
+  .widget .tabbed .tabs li {
+    font-size: 14px;
+  }
+
+  .widget-list li figure {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /* Single Portfolio Page
+  /*-----------------------------------------------------------------------------------*/
+  .single-project article {
+    padding: 40px 50px 0;
+  }
+
+  .related-projects {
+    padding-top: 30px;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Services
+  /*-----------------------------------------------------------------------------------*/
+  .services-items-wrapper article .content-wrapper {
+    padding: 15px 15px 0 15px;
+  }
+
+  .services-sidebar .services-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*  Contact Page
+  /*-----------------------------------------------------------------------------------*/
+  #map_canvas {
+    height: 470px;
+  }
+
+  .contacts-list {
+    margin-right: 0;
+    li {
+    }
+  }
+
+}
+
+
+
+

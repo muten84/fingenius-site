@@ -1,0 +1,106 @@
+/*-----------------------------------------------------------------------------------*/
+/*  About Page
+/*-----------------------------------------------------------------------------------*/
+.feature-content {
+  text-align: center;
+  padding-top: 15px;
+  section {
+    margin-bottom: 45px;
+  }
+  figure {
+    margin: 20px 0 35px;
+    min-height: 100px;
+    height: auto !important;
+    height: 100px;
+  }
+}
+
+.who-we-are,
+.our-philosophy {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  h3 + p {
+    margin-bottom: 30px;
+  }
+  p {
+    line-height: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+.team {
+  padding: 20px 0 10px;
+  h4 {
+    color: #2d2f2f;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  h5 {
+    color: #f16543;
+    font-size: 14px;
+    text-transform: lowercase;
+    margin-bottom: 27px;
+    font-weight: normal;
+  }
+  .team-member {
+    padding-top: 58px;
+    text-align: center;
+    img {
+      .square(150px);
+      .border-radius(100%);
+      margin: 0 auto 54px;
+    }
+    p {
+      line-height: 26px;
+      background: none;
+      padding: 0 25px;
+    }
+    figcaption {
+      border: none;
+    }
+  }
+}
+
+.clients {
+  padding: 34px 0 0;
+  .outter-wrapper {
+    position: relative;
+    padding: 0 45px;
+    margin: 64px 0;
+    .owl-item {
+      text-align: center;
+    }
+    img {
+      display: inline-block;
+    }
+    .next,
+    .prev {
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      margin: -18px 0 0;
+      cursor: pointer;
+    }
+    .prev {
+      background: url("../images/owl-caroseul-nav.png") no-repeat 8px 3px;
+      left: 1%;
+      &:hover {
+        background-position: 8px -50px;
+      }
+    }
+    .next {
+      right: 1%;
+      background: url("../images/owl-caroseul-nav.png") no-repeat -46px 3px;
+      &:hover {
+        background-position: -46px -50px;
+      }
+    }
+  }
+}
+

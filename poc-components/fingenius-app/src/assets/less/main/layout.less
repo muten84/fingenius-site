@@ -1,0 +1,21 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Layout
+/*-----------------------------------------------------------------------------------*/
+.page-container {
+  .box-sizing(content-box);
+}
+
+.main,
+.sidebar {
+  position: static;
+}
+
+.main {
+  a {
+    transition: all .2s ease-in-out;
+    color: @anchor_color;
+    &:hover {
+      color: @text-color;
+    }
+  }
+}

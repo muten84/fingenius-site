@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Breadcrumb
+/*-----------------------------------------------------------------------------------*/
+.breadcrumb-wrapper {
+  background-color: @page-header-bg-color;
+  padding: 33px 0;
+  margin: 0;
+  .container-box-sizing;
+}
+
+.breadcrumb {
+  text-transform: uppercase;
+  background: none;
+  margin: 0;
+  padding: 0;
+  a {
+    color: @heading_color;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 4px;
+    &:hover {
+      color: @heading_hover_color;
+    }
+  }
+  > li {
+    + li:before {
+      content: "\f101";
+      font-family: FontAwesome;
+      color: @heading_color;
+      margin-right: 2px;
+    }
+  }
+  > .active {
+    color: @heading_color;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
+
