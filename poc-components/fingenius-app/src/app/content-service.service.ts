@@ -41,5 +41,15 @@ export class ContentServiceService {
     ).toPromise();
   }
 
+  public getAboutContent() : Promise<any>{
+    return this.httpClient.get('assets/model/about/content.json').pipe(
+      map((val) => {
+       const menu : any =  val as any;
+        return menu.about;
+      })
+
+    ).toPromise();
+  }
+
 
 }

@@ -1,0 +1,23 @@
+{
+    "about": {
+        "title": "Finanza Geniale!",
+        "subtitle": "I nostri punti di forza al vostro servizio...",
+        "sections":[
+            {
+                "title": "Titolo 1",
+                "image": "assets/images/temp/about-image-1.png",
+                "description": "Etiam pretium quam sed lectus mollis, sed elementum velit cursus. Phasellus vitae mollis sem. Mauris vestibulum non urna ac placerat. Proin luctus tortor ac arcu scelerisque laoreet. Maecenas nisi metus,"
+            },
+            {
+                "title": "Titolo 2",
+                "image": "assets/images/temp/about-image-2.png",
+                "description": "Etiam pretium quam sed lectus mollis, sed elementum velit cursus. Phasellus vitae mollis sem. Mauris vestibulum non urna ac placerat. Proin luctus tortor ac arcu scelerisque laoreet. Maecenas nisi metus,"
+            },
+            {
+                "title": "Titolo 3",
+                "image": "assets/images/temp/about-image-3.png",
+                "description": "Etiam pretium quam sed lectus mollis, sed elementum velit cursus. Phasellus vitae mollis sem. Mauris vestibulum non urna ac placerat. Proin luctus tortor ac arcu scelerisque laoreet. Maecenas nisi metus,"
+            }
+        ]
+    }
+}

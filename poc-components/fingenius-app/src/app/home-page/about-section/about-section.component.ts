@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentServiceService } from 'src/app/content-service.service';
 
 @Component({
   selector: 'app-about-section',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutSectionComponent implements OnInit {
 
-  constructor() { }
+ about: any;
+
+  constructor(private contentService: ContentServiceService) { }
 
   ngOnInit(): void {
+    this.contentService.getAboutContent().then(about => {
+      this.about = about;
+    })
   }
 
 }
