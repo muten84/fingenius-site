@@ -1,0 +1,25 @@
+{
+    "slides": [
+        {
+            "image": "https://via.placeholder.com/1980x400.png",
+            "buttonText": "Richiedi un appuntamento...",
+            "buttonLink": "/home",
+            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionDescription": "Descrizione Banner"
+        },
+        {
+            "image": "https://via.placeholder.com/1980x400.png",
+            "buttonText": "Richiedi un appuntamento...",
+            "buttonLink": "/home",
+            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionDescription": "Descrizione Banner"
+        },
+        {
+            "image": "https://via.placeholder.com/1980x400.png",
+            "buttonText": "Richiedi un appuntamento...",
+            "buttonLink": "/home",
+            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionDescription": "Descrizione Banner"
+        }
+    ]
+}
