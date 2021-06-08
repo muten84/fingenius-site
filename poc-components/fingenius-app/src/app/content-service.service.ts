@@ -22,6 +22,15 @@ export class ContentServiceService {
     ).toPromise();
   }
 
+  public getFooterContent() : Promise<any>{
+    return this.httpClient.get('assets/model/footer/content.json').pipe(
+      map((val: any) => {
+       return val.footer;
+      })
+
+    ).toPromise();
+  }
+
   public getSlidesContent() : Promise<Array<SlideItem>>{
     return this.httpClient.get('assets/model/hero/slides/content.json').pipe(
       map((val) => {

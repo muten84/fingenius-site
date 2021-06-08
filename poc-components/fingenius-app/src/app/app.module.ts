@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FinHeaderComponent } from './fin-header/fin-header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -13,7 +14,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     FinHeaderComponent,
-  ],
+    FooterComponent,
+    ],
   imports: [
     BrowserModule,
     HttpClientModule,

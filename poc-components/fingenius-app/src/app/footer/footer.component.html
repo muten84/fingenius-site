@@ -1,0 +1,100 @@
+<footer class="footer" role="contentinfo">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4 ">
+
+                <section class="widget widget_text">
+
+                    <h3 class="title">{{about.title}}</h3>
+
+                    <div class="detail">
+
+                        <ng-template ngFor let-p [ngForOf]="about.paragraphs" let-i="index">
+                            <p>{{p}}
+                            </p>
+                        </ng-template>
+
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <div class="col-md-4 ">
+
+                <section class="widget widget_recent_entries">
+
+                    <h3 class="title">{{recents.title}}</h3>
+
+                    <ul>
+                        <ng-template ngFor let-p [ngForOf]="recents.posts" let-i="index">
+                            <li>
+                                <a href="#" class="blog-icon">
+                                    <i class="{{'fa fa-'+p.icon+' fa-2x'}}"></i>
+                                </a>
+
+                                <h5>
+                                    <a href="#">{{p.title}}</a>
+                                </h5>
+
+                                <div class="post-meta">
+                                    <time datetime="2015-08-29T13:58Z">{{p.date}},</time>
+                                    by <a href="#" class="author">p.author</a>
+                                </div>
+                            </li>
+                        </ng-template>
+
+                    </ul>
+
+                </section>
+
+            </div>
+
+            <div class="col-md-4 ">
+
+                <section class="widget contact">
+
+                    <h3 class="title">{{contacts.title}}</h3>
+
+                    <address>
+                        <ng-template ngFor let-p [ngForOf]="contacts.address" let-i="index">
+                            {{p}}<br>
+                        </ng-template>
+                    </address>
+
+                    <ul class="contacts-list">
+                        <li class="email"><span>Email : </span><a href="#">{{contacts.contactList['email']}}</a></li>
+                        <li class="phone"><span>Telefono : </span> {{contacts.contactList['phone']}}</li>
+                        <li class="fax"><span>Fax : </span> {{contacts.contactList['fax']}}</li>
+                    </ul>
+
+                </section>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <div class="row">
+
+                <!--  <div class="col-sm-6 ">
+                    <p>Copyright © 2015. All Rights Reserved by Mixer Theme.</p>
+                </div>
+
+                <div class="col-sm-6  credit">
+                    <p>Designed by <a href="#">Theme Designer</a>, eveloped by <a href="#">Majestic Themes</a></p>
+                </div>
+ -->
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>

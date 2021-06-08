@@ -1,0 +1,49 @@
+{
+    "footer": {
+        "about": {
+            "title": "Fingenius",
+            "paragraphs": [
+                "Paragrafo footer 1",
+                "Etiam pretium quam sed lectus mollis, sed elementum velit cursus. Phasellus vitae mollis sem.",
+                "Paragrafo footer 3"            ]
+        },
+        "recents":{
+            "title": "Ultime notizie",
+            "posts":[
+            {
+                "icon": "bullhorn",
+                "title": "Premio Cessioni",
+                "subtitle": "",
+                "date": "22 Sept 2015",
+                "author": "Admin"
+            },
+            {
+                "icon": "wechat",
+                "title": "Incenitivi superbpnus",
+                "subtitle": "",
+                "date": "22 Sept 2015",
+                "author": "Admin"
+            },
+            {
+                "icon": "file-video-o",
+                "title": "Nuova gestiopne cessioni",
+                "subtitle": "",
+                "date": "22 Sept 2015",
+                "author": "Admin"
+            }
+        ]},
+        "contact": {
+            "title": "Contatti",
+            "address": [
+                "Viale Unità D'Italia, 3",
+                "80045 - Pompei"
+                        ],
+            "contactList": {
+                "email": "info@fingenius.it",
+                "phone": "i12345678",
+                "fax": "i12345678"
+
+            }
+        }
+    }
+}
