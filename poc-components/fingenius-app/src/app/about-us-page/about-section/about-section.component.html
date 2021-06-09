@@ -1,0 +1,74 @@
+<div class="row feature-content">
+    <ng-template ngFor let-s [ngForOf]="about.sections" let-i="index">
+        <section class=" col-sm-4" *ngIf="about.sections && about.sections.length > 0">
+
+            <figure>
+
+                <img [src]=s.image alt="">
+
+            </figure>
+
+            <h3>{{s.title}}</h3>
+
+            <p>
+                {{s.description}}
+            </p>
+
+        </section>
+    </ng-template>
+
+    <!-- <section class=" col-sm-4" *ngFor="let s">
+
+        <figure>
+
+            <img src="assets/images/temp/about-image-1.png" alt="">
+
+        </figure>
+
+        <h3>Application Development</h3>
+
+        <p>
+            Etiam pretium quam sed lectus mollis, sed elementum velit
+            cursus. Phasellus vitae mollis sem. Mauris vestibulum non
+            ortor ac arcu scelerisque laoree metus,
+        </p>
+
+    </section>
+
+    <section class=" col-sm-4">
+
+        <figure>
+
+            <img src="assets/images/temp/about-image-2.png" alt="">
+
+        </figure>
+
+        <h3>We know time is money</h3>
+
+        <p>
+            Etiam pretium quam sed lectus mollis, sed elementum velit
+            cursus. Phasellus vitae mollis sem. Mauris vestibulum non
+            urna ac placerat. Proin lu.
+        </p>
+
+    </section>
+
+    <section class=" col-sm-4">
+
+        <figure>
+
+            <img src="assets/images/temp/about-image-3.png" alt="">
+
+        </figure>
+
+        <h3>Go and get Mixer</h3>
+
+        <p>
+            Etiam pretium quam sed lectus mollis, sed elementum velit
+            cursus. Phasellus vitae mollis sem. Mauris vestibulum non
+            urna ac placerat. Proin lu.
+        </p>
+
+    </section> -->
+
+</div>

@@ -4,6 +4,7 @@ export interface MenuList {
 
 export interface MenuContent {
     title: string;
+    link: string,
     childs: Array<MenuItem>
 }
 

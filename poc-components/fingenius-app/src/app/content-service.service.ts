@@ -41,11 +41,32 @@ export class ContentServiceService {
     ).toPromise();
   }
 
-  public getAboutContent() : Promise<any>{
+  public getAboutContent() : Promise<any> {
     return this.httpClient.get('assets/model/about/content.json').pipe(
       map((val) => {
        const menu : any =  val as any;
         return menu.about;
+      })
+
+    ).toPromise();
+  }
+
+  public getAboutContentSections() : Promise<any> {
+    return this.httpClient.get('assets/model/about/content.json').pipe(
+      map((val) => {
+       const menu : any =  val as any;
+       debugger;
+        return menu.about.sections;
+      })
+
+    ).toPromise();
+  }
+
+  public getAboutUsContent() : Promise<any> {
+    return this.httpClient.get('assets/model/about-us/content.json').pipe(
+      map((val) => {
+       const menu : any =  val as any;
+        return menu['about-us'];
       })
 
     ).toPromise();

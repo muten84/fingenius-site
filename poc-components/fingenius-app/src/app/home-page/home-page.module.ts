@@ -8,6 +8,7 @@ import { AboutSectionComponent } from './about-section/about-section.component';
 import { ServicesSectionComponent } from './services-section/services-section.component';
 import { FeaturesSectionComponent } from './features-section/features-section.component';
 import { TestimonialsSectionComponent } from './testimonials-section/testimonials-section.component';
+import { FooterComponent } from '../footer/footer.component';
 
 
 
@@ -18,7 +19,8 @@ import { TestimonialsSectionComponent } from './testimonials-section/testimonial
     AboutSectionComponent,
     ServicesSectionComponent,
     FeaturesSectionComponent,
-    TestimonialsSectionComponent],
+    TestimonialsSectionComponent,
+    FooterComponent],
   imports: [
     CommonModule,
     HomePageRoutingModule,

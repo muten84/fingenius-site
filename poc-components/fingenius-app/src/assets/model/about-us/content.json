@@ -1,0 +1,26 @@
+{
+    "about-us":{
+        "title": "",
+        "slogan": "Finanza Geniale",
+        "logo": "assets/images/fingenius/img/Logo Fingenius.png",
+        "incipit": "Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.",
+        "paragraphs": [
+            {
+                "title": "La nostra filosofia",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Chi siamo",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Cosa facciamo",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "Titolo 3",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            }
+        ]
+    }
+}

@@ -1,0 +1,220 @@
+<div class="fill-bg">
+<div class="container page-container">
+
+    <div class="main" role="main">
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <header>
+
+                <h1 class="page-title">
+                    {{about.title}}
+                </h1>
+
+                <div class="separator">
+                    <span class="line"></span><span class="square"></span><span class="line"></span>
+                </div>
+
+                <img [src]="about.logo" alt="Mixer Logo" style="width: 50%; height: 50%;">
+
+                <p>
+                    {{about.incipit}}
+                </p>
+
+                <div class="flex separator">
+                    <span class="line"></span>
+                    <span class="wrap"><span class="square"></span></span>
+                </div>
+
+            </header>
+
+        </section>
+        <!-- End Page Header -->
+
+
+        <app-about-section></app-about-section>
+
+
+    <!--     -->
+
+        <div class="flex separator">
+            <span class="line"></span>
+            <span class="wrap"><span class="square"></span></span>
+        </div>
+
+
+        <div class="row">
+
+            <ng-template ngFor let-s [ngForOf]="about.paragraphs" let-i="index">
+                <section class="who-we-are  col-sm-6">
+
+                    <h3>{{s.title}}</h3>
+
+                    <p>
+                        {{s.text}}
+                    </p>
+
+                    <!-- <h4>Description</h4>
+
+                    <p> Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus
+                        rhoncus sem.</p>
+
+                    <p>
+                        Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus,
+                        id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam
+                        placerat sapien elit.
+                    </p> -->
+
+                </section>
+
+            </ng-template>
+
+           <!--  <section class="who-we-are  col-sm-6">
+
+                <h3>Who we are</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet
+                    in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                </p>
+
+                <h4>Description</h4>
+
+                <p> Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus
+                    rhoncus sem.</p>
+
+                <p>
+                    Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus,
+                    id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam
+                    placerat sapien elit.
+                </p>
+
+            </section>
+
+            <section class="our-philosophy  col-sm-6">
+
+                <h3>Our Philosophy</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet
+                    in, auctor ut tellus. Etiam enim lacus, ornare et tempor, rhoncus rhoncus sem.Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit.
+                </p>
+
+                <h4>Description</h4>
+
+                <p>Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor,
+                    rhoncus rhoncus sem.
+                </p>
+
+                <p>Aliquam volutpat arcu et nibh mollis eleifend pharetra lorem scelerisque. Donec vel enim purus,
+                    id viverra neque. Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam
+                    placerat sapien elit.
+                </p>
+
+            </section> -->
+
+        </div>
+
+        <div class="flex separator">
+            <span class="line"></span>
+            <span class="wrap"><span class="square"></span></span>
+        </div>
+
+
+       <!--  <section class="team">
+
+            <h3 class="section-title">Creative Team</h3>
+
+            <div class="row">
+
+                <div class="team-member col-md-4 ">
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/temp/about-us-team-memeber-1.jpg" alt="">
+                        <figcaption>
+                            <h4><a href="#">BRUCE WAYNE</a></h4>
+                            <h5 class="designation">designer</h5>
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Bruce is the man responsible for most of the graphic design. He is also a famous super hero by
+                        night.
+                    </p>
+
+                </div>
+
+                <div class="team-member col-md-4 ">
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/temp/about-us-team-memeber-2.jpg" alt="">
+                        <figcaption>
+                            <h4><a href="">JAMES T. KIRK</a></h4>
+                            <h5 class="designation">founder</h5>
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Bruce is the man responsible for most of the graphic design. He is also a famous super hero by
+                        night.
+                    </p>
+
+                </div>
+
+                <div class="team-member col-md-4 ">
+
+                    <figure>
+                        <img class="img-responsive" src="assets/images/temp/about-us-team-memeber-3.jpg" alt="">
+                        <figcaption>
+                            <h4><a href="">dick grayson</a></h4>
+                            <h5 class="designation">developer</h5>
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Bruce is the man responsible for most of the graphic design. He is also a famous super hero by
+                        night.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section> -->
+
+       <!--  <div class="flex separator">
+            <span class="line"></span>
+            <span class="wrap"><span class="square"></span></span>
+        </div> -->
+
+
+       <!--  <section class="clients">
+
+            <h3 class="section-title">Clients</h3>
+
+            <div class="outter-wrapper">
+
+                <a class="prev"></a>
+                <a class="next"></a>
+
+                <div class="owl-carousel">
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-1.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-2.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-3.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-4.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-1.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-2.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-3.png" alt=""/></a>
+                    <a href="#"><img src="assets/images/temp/client-about-us-image-4.png" alt=""/></a>
+                </div>
+
+            </div>
+
+        </section> -->
+
+
+    </div>
+</div>
