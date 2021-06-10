@@ -25,6 +25,7 @@ import { FooterComponent } from '../footer/footer.component';
     CommonModule,
     HomePageRoutingModule,
     NgbModule
-  ]
+  ],
+  exports: [FooterComponent]
 })
 export class HomePageModule { }

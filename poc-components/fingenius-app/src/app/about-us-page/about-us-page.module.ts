@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutUsComponent } from './about-us/about-us.component';
 import {AboutUsRoutingModule} from './aboutus-routing.module';
 import {AboutSectionComponent} from './about-section/about-section.component'
-
+import {HomePageModule} from '../home-page/home-page.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import {AboutSectionComponent} from './about-section/about-section.component'
   ],
   imports: [
     CommonModule,
-    AboutUsRoutingModule
+    AboutUsRoutingModule,
+    HomePageModule,
   ]
 })
 export class AboutUsPageModule { }

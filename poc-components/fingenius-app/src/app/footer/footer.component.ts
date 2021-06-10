@@ -8,11 +8,11 @@ import { ContentServiceService } from '../content-service.service';
 })
 export class FooterComponent implements OnInit {
 
-  recents: any;
+  recents: any = {};
 
-  about: any;
+  about: any = {paragraphs: []};
 
-  contacts: any
+  contacts: any = {contactList: []};
 
   constructor(private contentService: ContentServiceService) { }
 

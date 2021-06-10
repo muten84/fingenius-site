@@ -7,10 +7,19 @@ const routes: Routes = [
     loadChildren: () => import('./home-page/home-page.module').then(m => m.HomePageModule),data: {animation: 'HomePage'}
 
   },
-
   {
     path: 'about',
     loadChildren: () => import('./about-us-page/about-us-page.module').then(m => m.AboutUsPageModule),data: {animation: 'AboutPage'}
+
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./product-page/product-page.module').then(m => m.ProductPageModule),data: {animation: 'ServicePage'}
+
+  },
+  {
+    path: 'contacts',
+    loadChildren: () => import('./contacts-page/contacts-page.module').then(m => m.ContactsPageModule),data: {animation: 'ContactPage'}
 
   },
  /*  {

@@ -1,12 +1,16 @@
 {
     "menu": [
         {
+            "title": "Home",
+            "link": "/home"
+        },
+        {
             "title": "Chi siamo",
             "link": "/about"
         },
         {
             "title": "Servizi",
-            "link": "",
+            "link": "/services",
             "childs": [
                 {
                     "title": "Ecobonus",
@@ -36,7 +40,7 @@
         },
         {
             "title": "Contattaci",
-            "link": ""
+            "link": "/contacts"
         }
     ]
 }

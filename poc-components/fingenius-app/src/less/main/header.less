@@ -346,9 +346,11 @@
               background: transparent;
               background-size: 500px 1px;
               background-position: 100%;
+
               &:hover {
                 //                background-position: 0;
                 background: #F3A353;
+                transition: all .2s ease-in-out;
               }
               a {
                 transition: all .2s ease-in-out;
@@ -624,7 +626,7 @@
                 }
               }
               a {
-                color: #80878D;
+                color: #512626;
               }
             }
           }
@@ -703,3 +705,16 @@
 }
 
 
+.main-menu > ul li a {
+  transition: all 0.2s ease-in-out !important;
+  display: inline-block;
+  color: #512626;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  padding: 19px 2px 17px;
+  border-bottom: 4px solid transparent;
+}

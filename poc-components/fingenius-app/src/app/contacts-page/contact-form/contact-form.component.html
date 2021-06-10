@@ -1,0 +1,137 @@
+<div class="container page-container">
+
+
+    <div class="main" role="main">
+
+        <!-- Page Header -->
+        <section class="page-header">
+
+            <header>
+
+
+                <h1 class="page-title">
+                    Contact Us </h1>
+
+                <div class="separator">
+                    <span class="line"></span><span class="square"></span><span class="line"></span>
+                </div>
+
+
+                <p>We love good ideas, big challenges and forward thinking clients. If you have an interesting project —
+                    big or small — we’d love to collaborate with you. To discuss, simply drop us an email and we’ll be
+                    in touch. We’re always interested in hearing about new possibilities.</p>
+
+                <div class="flex separator">
+                    <span class="line"></span>
+                    <span class="wrap"><span class="square"></span></span>
+                </div>
+
+
+            </header>
+
+        </section>
+        <!-- End Page Header -->
+
+
+        <section id="contact-form">
+
+            <h2 class="form-heading">Send us message</h2>
+
+            <form class="contact-form clearfix" method="post" action="functions.php" novalidate="novalidate">
+
+                <div class="container-left">
+
+                    <p>
+                        <label for="name">Your Name <span>*</span></label>
+                        <input type="text" name="name" id="name" class="required" title="Please enter your name">
+                    </p>
+
+                    <p>
+                        <label for="email">Your Email <span>*</span></label>
+                        <input type="text" name="email" id="email" class="email required"
+                               title="Please enter your email address">
+                    </p>
+
+                    <p>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </p>
+
+                </div>
+
+                <div class="container-right">
+
+                    <p>
+                        <label for="comment">Your Message</label>
+                        <textarea name="message" id="comment" class="required"
+                                  title="Please enter your message"></textarea>
+                    </p>
+
+                    <p class="text-right">
+                        <img src="assets/images/ajax-loader.gif" id="contact-loader" alt="Loading...">
+                        <input type="submit" value="Submit" id="submit" name="submit">
+                    </p>
+
+                </div>
+
+            </form>
+
+            <div class="error-container"></div>
+            <div id="message-sent"></div>
+
+        </section>
+
+        <ul class="contacts-list row">
+            <li class="col-sm-4 text-center">
+                <div class="inner-contact address-info">
+                    <h4>address</h4>
+
+                    <div class="flex separator">
+                        <span class="line"></span>
+                        <span class="wrap"><span class="square"></span></span>
+                    </div>
+                    <p>
+                        <i class="fa fa-map-marker fa-4x animated"></i>
+                        8901 Marmora Road,<br>
+                        Glasgow, D04 89GR.
+                    </p>
+                </div>
+            </li>
+            <li class="col-sm-4 text-center">
+                <div class="inner-contact contact-info">
+                    <h4>contact info</h4>
+
+                    <div class="flex separator">
+                        <span class="line"></span>
+                        <span class="wrap"><span class="square"></span></span>
+                    </div>
+
+                    <p>
+                        <i class="fa fa-phone-square fa-4x animated"></i>
+                        (123) 563-9899-234
+                        <br>
+                        (123) 123-4566-234
+                    </p>
+                </div>
+            </li>
+            <li class="col-sm-4 text-center">
+                <div class="inner-contact mail-info">
+                    <h4>mail info</h4>
+
+                    <div class="flex separator">
+                        <span class="line"></span>
+                        <span class="wrap"><span class="square"></span></span>
+                    </div>
+
+                    <p>
+                        <i class="fa fa-envelope fa-4x animated"></i>
+                        <a href="#">info@mixer.com</a>
+                        <br>
+                        <a href="#">contact@mixer.com</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<app-fin-location></app-fin-location>

@@ -8,7 +8,7 @@ import { ContentServiceService } from 'src/app/content-service.service';
 })
 export class AboutSectionComponent implements OnInit {
 
- about: any;
+ about: any = {};
 
   constructor(private contentService: ContentServiceService) { }
 
