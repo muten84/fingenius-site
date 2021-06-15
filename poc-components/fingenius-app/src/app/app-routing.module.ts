@@ -22,10 +22,10 @@ const routes: Routes = [
     loadChildren: () => import('./contacts-page/contacts-page.module').then(m => m.ContactsPageModule),data: {animation: 'ContactPage'}
 
   },
- /*  {
+   {
     path: '',
     redirectTo: '/home', pathMatch: 'full'
-  } */
+  }
 
 ];
 

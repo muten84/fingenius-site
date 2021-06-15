@@ -16,6 +16,7 @@ export class AppComponent {
   title = 'fingenius-app';
 
   prepareRoute(outlet: RouterOutlet) {
+    console.log('outlet.activatedRouteData', outlet.activatedRouteData);
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
     //return slideInAnimation;
   }
