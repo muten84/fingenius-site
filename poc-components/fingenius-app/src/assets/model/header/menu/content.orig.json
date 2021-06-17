@@ -1,0 +1,46 @@
+{
+    "menu": [
+        {
+            "title": "Home",
+            "link": "/home"
+        },
+        {
+            "title": "Chi siamo",
+            "link": "/about"
+        },
+        {
+            "title": "Servizi",
+            "link": "/services",
+            "childs": [
+                {
+                    "title": "Ecobonus",
+                    "link": ""
+                },
+                {
+                    "title": "CQS",
+                    "link": ""
+                },
+                {
+                    "title": "TFS",
+                    "link": ""
+                },
+                {
+                    "title": "Mutui",
+                    "link": ""
+                },
+                {
+                    "title": "Prestiti",
+                    "link": ""
+                },
+                {
+                    "title": "Assicurazioni",
+                    "link": ""
+                }
+            ]
+        },
+        {
+            "title": "Contattaci",
+            "link": "/contacts"
+        }
+    ]
+}

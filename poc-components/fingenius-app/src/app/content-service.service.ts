@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {MenuContent, MenuList} from './model/menu-content';
 import {SlideItem} from './model/slides-content';
@@ -70,6 +70,42 @@ export class ContentServiceService {
       })
 
     ).toPromise();
+  }
+
+  public sendMail(destination: string, name: string, msg: string) : Promise<any> {
+    const key = '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';
+    const url = 'https://api.sendinblue.com/v3/smtp/email';
+    const data : any = {
+      "sender":{
+         "name":name,
+         "email":destination
+      },
+      "to":[
+         {
+            "email": 'bifulcoluigi@gmail.com',
+            "name": name
+         }
+      ],
+      "subject":"Richiesta contatto da "+name,
+      "htmlContent":"<html><head></head><body><p>Spett.le Fin.Gen.Ius S.r.l,</p>"+msg+"</p></body></html>"
+   }
+
+    return this.httpClient.post(url,data, {
+      headers:new HttpHeaders({
+        'Content-Type':  'application/json',
+        'api-key': ''+key,
+        'Accept':'application/json',
+      })
+    }).toPromise();
+  }
+
+
+  verifyToken(token: string) {
+ /*    const key = '6Lf5HTwbAAAAAPVvP7wpc_6YPkGYDhFNsWxmFObu';
+    const params :HttpParams = new HttpParams();
+    params.append('secret', 'key');
+    params.append('response', token); */
+    return this.httpClient.get('https://europe-central2-precise-ratio-302609.cloudfunctions.net/verifyToken?token='+token).toPromise();
   }
 
 

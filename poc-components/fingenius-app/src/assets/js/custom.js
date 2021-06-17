@@ -640,11 +640,11 @@
     /*----------------------------------------------------------------------------------*/
     /* Contact Form AJAX validation and submission
      /*---------------------------------------------------------------------------------- */
-    if (jQuery().validate && jQuery().ajaxSubmit) {
-        // Contact Form Handling
+   /*  if (jQuery().validate && jQuery().ajaxSubmit) {
+        // Contact Form Handling */
 
 
-        var contact_options = {
+       /*  var contact_options = {
             target: '#message-sent',
             beforeSubmit: function () {
                 $('#contact-loader').fadeIn('fast');
@@ -662,8 +662,8 @@
             submitHandler: function (form) {
                 $(form).ajaxSubmit(contact_options);
             }
-        });
-    }
+        }); */
+    /* } */
 
     /*-----------------------------------------------------------------*/
     /* Message

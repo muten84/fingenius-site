@@ -12,13 +12,15 @@ export class FinLocationComponent implements OnInit {
 
   apiLoaded: Observable<boolean>;
 
+  //40.74875956897222, 14.51246051353551
+
   options: google.maps.MapOptions = {
-    center: { lat: 38.9987208, lng: -77.2538699 },
+    center: { lat: 40.74875956897222, lng: 14.51246051353551 },
     zoom : 14
   };
 
   marker = {
-    position: { lat: 38.9987208, lng: -77.2538699 },
+    position: { lat: 40.74875956897222, lng: 14.51246051353551 },
  }
 
 

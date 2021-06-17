@@ -10,16 +10,16 @@
 
 
                 <h1 class="page-title">
-                    Contact Us </h1>
+                    Contattaci </h1>
 
                 <div class="separator">
                     <span class="line"></span><span class="square"></span><span class="line"></span>
                 </div>
 
 
-                <p>We love good ideas, big challenges and forward thinking clients. If you have an interesting project —
-                    big or small — we’d love to collaborate with you. To discuss, simply drop us an email and we’ll be
-                    in touch. We’re always interested in hearing about new possibilities.</p>
+                <p>Supportiamo i liberi professionisti, le imprese
+                    edili, gli amministratori di condominio, nella
+                    gestione delle pratiche.</p>
 
                 <div class="flex separator">
                     <span class="line"></span>
@@ -35,56 +35,75 @@
 
         <section id="contact-form">
 
-            <h2 class="form-heading">Send us message</h2>
+            <h2 class="form-heading">Compila il form con i tuoi dati ti ricontatteremo al più presto</h2>
 
-            <form class="contact-form clearfix" method="post" action="functions.php" novalidate="novalidate">
+            <form (keydown.enter)="$event.preventDefault()" (submit)="$event.preventDefault()" class="contact-form clearfix" >
 
                 <div class="container-left">
 
                     <p>
-                        <label for="name">Your Name <span>*</span></label>
-                        <input type="text" name="name" id="name" class="required" title="Please enter your name">
+                        <label for="nome">Nome <span>*</span></label>
+                        <input [(ngModel)]="name" type="text" name="nome" id="name" class="required" title="Nome">
+                    </p>
+                    <p>
+                        <label for="cognome">Cognome <span>*</span></label>
+                        <input [(ngModel)]="surname" type="text" name="cognome" id="cognome" class="required" title="Cognome">
                     </p>
 
                     <p>
-                        <label for="email">Your Email <span>*</span></label>
-                        <input type="text" name="email" id="email" class="email required"
-                               title="Please enter your email address">
+                        <label for="email">Indirizzo e-mail <span>*</span></label>
+                        <input [(ngModel)]="email" type="text" name="email" id="email" class="email required"
+                               title="Inserisci il tuo indirizzo e-mail">
                     </p>
 
-                    <p>
+                   <!--  <p>
                         <label for="subject">Subject</label>
                         <input type="text" name="subject" id="subject">
+                    </p> -->
+                    <p>
+                        <label for="comment">Lascia qui il tuo messaggio!</label>
+                        <textarea [(ngModel)]="message" name="message" id="comment" class="required"
+                                  title="Lascia qui il tuo messaggio..."></textarea>
                     </p>
-
                 </div>
 
                 <div class="container-right">
+                    <app-fin-location class="mt-5"></app-fin-location>
 
-                    <p>
-                        <label for="comment">Your Message</label>
-                        <textarea name="message" id="comment" class="required"
-                                  title="Please enter your message"></textarea>
-                    </p>
+                    <div class="row col-12">
+                        <div class="col-6 col-md-4 col-sm-2 col-xs-2 mt-4 justify-content-center">
+                            <p class="text-right mt-5">
 
-                    <p class="text-right">
-                        <img src="assets/images/ajax-loader.gif" id="contact-loader" alt="Loading...">
-                        <input type="submit" value="Submit" id="submit" name="submit">
-                    </p>
+                                 <button [disabled]="!sendEnabled" id='sendMail' (click)="sendMail()"  class="btn btn-mixer btn-lg">
+                                    <i class="fa fa-paper-plane fa-lg"></i> Invia
+                                </button>
+                            </p>
+                        </div>
+                        <div class="col-6 col-md-4 col-sm-2 col-xs-2 mt-4 justify-content-center">
+
+                                <app-grecaptcha (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
+
+                        </div>
+                    </div>
+
+
 
                 </div>
 
             </form>
+            <!-- <button id='sendMail' (click)="sendMail()"  class="btn btn-mixer btn-lg">
+                <i class="fa fa-paper-plane fa-lg"></i> Invia
+            </button> -->
 
-            <div class="error-container"></div>
-            <div id="message-sent"></div>
+            <!-- <div class="error-container"></div>
+            <div id="message-sent"></div> -->
 
         </section>
 
         <ul class="contacts-list row">
             <li class="col-sm-4 text-center">
                 <div class="inner-contact address-info">
-                    <h4>address</h4>
+                    <h4>Puoi trovarci in...</h4>
 
                     <div class="flex separator">
                         <span class="line"></span>
@@ -92,14 +111,14 @@
                     </div>
                     <p>
                         <i class="fa fa-map-marker fa-4x animated"></i>
-                        8901 Marmora Road,<br>
-                        Glasgow, D04 89GR.
+                        Viale Unità D'italia, 3<br>
+                        80045 Pompei (NA).
                     </p>
                 </div>
             </li>
             <li class="col-sm-4 text-center">
                 <div class="inner-contact contact-info">
-                    <h4>contact info</h4>
+                    <h4>Contatti</h4>
 
                     <div class="flex separator">
                         <span class="line"></span>
@@ -108,15 +127,14 @@
 
                     <p>
                         <i class="fa fa-phone-square fa-4x animated"></i>
-                        (123) 563-9899-234
+                        081 863 5516
                         <br>
-                        (123) 123-4566-234
                     </p>
                 </div>
             </li>
             <li class="col-sm-4 text-center">
                 <div class="inner-contact mail-info">
-                    <h4>mail info</h4>
+                    <h4>Indirizzo e-mail</h4>
 
                     <div class="flex separator">
                         <span class="line"></span>
@@ -125,13 +143,11 @@
 
                     <p>
                         <i class="fa fa-envelope fa-4x animated"></i>
-                        <a href="#">info@mixer.com</a>
+                        <a href="#">info@fingenius.it</a>
                         <br>
-                        <a href="#">contact@mixer.com</a>
                     </p>
                 </div>
             </li>
         </ul>
     </div>
 </div>
-<app-fin-location></app-fin-location>
