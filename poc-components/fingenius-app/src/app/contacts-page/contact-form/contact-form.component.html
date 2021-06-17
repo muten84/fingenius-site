@@ -1,6 +1,8 @@
+
+<div class="fill-bg ">
 <div class="container page-container">
 
-
+<app-hero (buttonClicked)="scroll(target)"></app-hero>
     <div class="main" role="main">
 
         <!-- Page Header -->
@@ -9,12 +11,12 @@
             <header>
 
 
-                <h1 class="page-title">
+               <!--  <h1 class="page-title">
                     Contattaci </h1>
 
                 <div class="separator">
                     <span class="line"></span><span class="square"></span><span class="line"></span>
-                </div>
+                </div> -->
 
 
                 <p>Supportiamo i liberi professionisti, le imprese
@@ -33,7 +35,7 @@
         <!-- End Page Header -->
 
 
-        <section id="contact-form">
+        <section #target id="contact-form">
 
             <h2 class="form-heading">Compila il form con i tuoi dati ti ricontatteremo al più presto</h2>
 
@@ -71,7 +73,12 @@
                     <app-fin-location class="mt-5"></app-fin-location>
 
                     <div class="row col-12">
-                        <div class="col-6 col-md-4 col-sm-2 col-xs-2 mt-4 justify-content-center">
+                        <div class="col-6 col-md-6 col-sm-2 col-xs-2 mt-4 justify-content-end">
+
+                            <app-grecaptcha (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
+
+                    </div>
+                        <div class="col-6 col-md-6 col-sm-2 col-xs-2 mt-4 justify-content-end">
                             <p class="text-right mt-5">
 
                                  <button [disabled]="!sendEnabled" id='sendMail' (click)="sendMail()"  class="btn btn-mixer btn-lg">
@@ -79,11 +86,7 @@
                                 </button>
                             </p>
                         </div>
-                        <div class="col-6 col-md-4 col-sm-2 col-xs-2 mt-4 justify-content-center">
 
-                                <app-grecaptcha (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
-
-                        </div>
                     </div>
 
 
@@ -150,4 +153,5 @@
             </li>
         </ul>
     </div>
+</div>
 </div>

@@ -7,20 +7,24 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { RecaptchaModule } from "ng-recaptcha";
 import { GrecaptchaComponent } from './grecaptcha/grecaptcha.component';
 import { FormsModule } from '@angular/forms';
+import { HeroComponent } from './hero/hero.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [
     ContactFormComponent,
     FinLocationComponent,
-    GrecaptchaComponent
+    GrecaptchaComponent,
+    HeroComponent
   ],
   imports: [
     CommonModule,
     GoogleMapsModule,
     ContactsPageRoutingModule,
     RecaptchaModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ]
 })
 export class ContactsPageModule { }

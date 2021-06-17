@@ -50,4 +50,10 @@ export class ContactFormComponent implements OnInit {
     this.sendEnabled = false;
 
   }
+
+  scroll(el: HTMLElement) {
+    console.log('request appointment', el);
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
 }

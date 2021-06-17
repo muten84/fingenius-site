@@ -1,0 +1,30 @@
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let slide of slides$ | async">
+      <div class="ml-auto mr-auto picsum-img-wrapper row no-gutters">
+        <div class="col-6">
+          <a href="#"><img width='600px' height="400px" [src]="slide.image" alt="Slide"></a>
+        </div>
+        <div class="col-6 c-caption ">
+          <h1>{{slide.slideCaptionTitle}}</h1>
+          <p>{{slide.slideCaptionDescription}}</p>
+          <div class="slide-description">
+            <button type="button" class="btn btn-mixer btn-lg" (click)="sendEvent()">{{slide.buttonText}}</button>
+
+          </div>
+          </div>
+
+        </div>
+        <div class="col-6 text-center slide-description ">
+
+      </div>
+
+      <!-- <div class="carousel-caption">
+        <h3>{{slide.slideCaptionTitle}}</h3>
+        <p>{{slide.slideCaptionDescription}}</p>
+      </div>
+      <div class="col text-center slide-description ">
+        <a href="#">{{slide.buttonText}}</a>
+
+        </div> -->
+    </ng-template>
+  </ngb-carousel>

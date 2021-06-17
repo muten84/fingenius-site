@@ -1,24 +1,24 @@
 {
     "slides": [
         {
-            "image": "https://via.placeholder.com/1980x400.png",
-            "buttonText": "Richiedi un appuntamento...",
+            "image": "assets/images/fingenius/img/superbonus-110.jpeg",
+            "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
-            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionTitle": "Super Bonus",
             "slideCaptionDescription": "Descrizione Banner"
         },
         {
-            "image": "https://via.placeholder.com/1980x400.png",
-            "buttonText": "Richiedi un appuntamento...",
+            "image": "assets/images/fingenius/img/sismabonus.jpg",
+            "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
-            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionTitle": "Sisma Bonus",
             "slideCaptionDescription": "Descrizione Banner"
         },
         {
-            "image": "https://via.placeholder.com/1980x400.png",
-            "buttonText": "Richiedi un appuntamento...",
+            "image": "assets/images/fingenius/img/ristrutturazione-casa.jpg",
+            "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
-            "slideCaptionTitle": "Titolo Banner",
+            "slideCaptionTitle": "Ristrutturazione casa",
             "slideCaptionDescription": "Descrizione Banner"
         }
     ]
