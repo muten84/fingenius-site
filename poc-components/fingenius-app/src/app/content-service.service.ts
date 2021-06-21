@@ -82,7 +82,7 @@ export class ContentServiceService {
       },
       "to":[
          {
-            "email": 'bifulcoluigi@gmail.com',
+            "email": 'info@fingenius.it',
             "name": name
          }
       ],

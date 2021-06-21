@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, Input} from '@angular/core';
 
 @Component({
   selector: 'app-grecaptcha',
@@ -13,6 +13,8 @@ export class GrecaptchaComponent implements OnInit {
   @Output('error')
   erorrEmitter = new EventEmitter();
 
+  @ViewChild('captchaRef') captchaRef: any;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -25,6 +27,18 @@ export class GrecaptchaComponent implements OnInit {
 
   errored(error : any) {
     this.erorrEmitter.emit(error);
+  }
+
+  @Input('reset')
+  set reset (r: boolean) {
+    console.log('reset recaptcha', r);
+    if(!r){
+
+    }
+    else{
+      if(this.captchaRef)
+      this.captchaRef.reset();
+    }
   }
 
 }

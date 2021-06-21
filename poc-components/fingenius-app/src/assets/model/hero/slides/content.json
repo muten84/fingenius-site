@@ -1,25 +1,25 @@
 {
     "slides": [
         {
-            "image": "assets/images/fingenius/img/superbonus-110.jpeg",
+            "image": "assets/images/fingenius/img/Superbonus.jpg",
             "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
             "slideCaptionTitle": "Super Bonus",
-            "slideCaptionDescription": "Descrizione Banner"
+            "slideCaptionDescription": "Il Superbonus eleva al 110% \n l’aliquota di detrazione delle spese sostenute dal 1° luglio 2020 al 30 giugno 2022…"
         },
         {
-            "image": "assets/images/fingenius/img/sismabonus.jpg",
+            "image": "assets/images/fingenius/img/sismabonus_2.png",
             "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
             "slideCaptionTitle": "Sisma Bonus",
-            "slideCaptionDescription": "Descrizione Banner"
+            "slideCaptionDescription": "I contribuenti che eseguono interventi per l’adozione di misure antisismiche sugli edifici possono detrarre una parte delle spese sostenute dalle imposte sui redditi..."
         },
         {
-            "image": "assets/images/fingenius/img/ristrutturazione-casa.jpg",
+            "image": "assets/images/fingenius/img/ecobonus22.jpg",
             "buttonText": "Richiedi un appuntamento",
             "buttonLink": "/home",
-            "slideCaptionTitle": "Ristrutturazione casa",
-            "slideCaptionDescription": "Descrizione Banner"
+            "slideCaptionTitle": "Eco Bonus",
+            "slideCaptionDescription": "L’ecobonus 2021 consente ai contribuenti di beneficiare di sconti fiscali per i lavori che puntano a migliorare le prestazioni energetiche degli immobili esistenti..."
         }
     ]
 }
