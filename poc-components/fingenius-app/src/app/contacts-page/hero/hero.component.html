@@ -2,12 +2,12 @@
   <ng-template ngbSlide *ngFor="let slide of slides$ | async">
     <div class="ml-auto mr-auto picsum-img-wrapper row no-gutters">
        <div class="col-12">
-        <a href="#"><img width='100%' height="300px" [src]="slide.image" alt="Slide"></a>
+        <a href="#"><img class="img-container" [src]="slide.image" alt="Slide"></a>
 
       </div>
       <div class="c-caption mr-5">
         <h1>{{slide.slideCaptionTitle}}</h1>
-        <p class="lead text-justify">{{slide.slideCaptionDescription}}</p>
+        <p class="lead text-justify mr-5">{{slide.slideCaptionDescription}}</p>
         <div class="slide-description">
           <button type="button" class="btn btn-mixer btn-lg" (click)="sendEvent()">{{slide.buttonText}}</button>
 

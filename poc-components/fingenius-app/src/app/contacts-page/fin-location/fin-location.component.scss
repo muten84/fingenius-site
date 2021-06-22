@@ -1,6 +1,18 @@
-.my-google-map{
-    .map-container{
-      width: 800px;
-      height: 600px;
-    }
+.map-container {
+  width: 35vw;
+  height: 60vh
+}
+
+@media only screen and (max-width: 900px) {
+  .map-container {
+    width: 89vw;
+    height: 100vh
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .map-container {
+    width: 89vw;
+    height: 65vh
+  }
+}

@@ -37,4 +37,14 @@ export class FinHeaderComponent implements OnInit {
 
 
   }
+
+
+
+  scrollTo() {
+      const el2 = document.querySelector('#contact-form');
+      if(el2){
+        el2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      return;
+  }
 }

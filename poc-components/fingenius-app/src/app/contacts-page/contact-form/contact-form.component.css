@@ -1,0 +1,9 @@
+
+
+@media only screen and (max-width: 1200px) {
+    #contact-form .container-left, #contact-form .container-right {
+        width: 100%;
+    }
+}
+
+

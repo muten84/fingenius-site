@@ -2,11 +2,13 @@
     "menu": [
         {
             "title": "Dove Siamo",
-            "link": "/contacts"
+            "link": "/contacts",
+            "scrollTo": "#contact-form"
         },
         {
             "title": "Contattaci",
-            "link": "/contacts"
+            "link": "/contacts",
+            "scrollTo": "#contact-form"
         }
     ]
 }

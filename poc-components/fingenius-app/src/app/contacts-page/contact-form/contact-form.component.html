@@ -39,22 +39,23 @@
 
             <h2 class="form-heading">Compila il form con i tuoi dati ti ricontatteremo al più presto</h2>
 
-            <div *ngIf="incomplete" class="alert alert-warning" role="alert">
-                Per favore compila tutti i campi
-              </div>
+            <div id="alert-box">
+                <div *ngIf="incomplete"  class="alert alert-warning" role="alert">
+                    Per favore compila tutti i campi
+                </div>
 
-              <div *ngIf="mailError" class="alert alert-warning" role="alert">
-                  Errore invio mail. Prova a contattarci telefonicamente
-              </div>
+                <div *ngIf="mailError" class="alert alert-danger" role="alert">
+                    Errore invio mail. Prova a contattarci telefonicamente
+                </div>
 
-              <div *ngIf="mailSent" class="alert alert-warning" role="alert">
-                  L'email è stata inviata. Sarai ricontattato al più presto da un nostro operatore!
+                <div *ngIf="mailSent" class="alert alert-info" role="alert">
+                    L'email è stata inviata. Sarai ricontattato al più presto da un nostro operatore!
+                </div>
+
+                <div *ngIf="sendEnabled" class="alert alert-warning" role="alert">
+                    Compilare re-Captcha!
+                </div>
             </div>
-
-            <div *ngIf="sendEnabled" class="alert alert-warning" role="alert">
-               Compilare re-Captcha!
-            </div>
-
 
 
 
@@ -86,12 +87,19 @@
                         <textarea [(ngModel)]="message" name="message" id="comment" class="required"
                                   title="Lascia qui il tuo messaggio..."></textarea>
                     </p>
-                    <p class="text-left mt-2">
+                    <div class="text-left d-flex justify-content-center mt-2">
                         <!--disabled]="!sendEnabled"-->
                         <button  id='sendMail' (click)="sendMail()"  class="btn btn-mixer btn-lg">
                            <i class="fa fa-paper-plane fa-lg"></i> Invia
                        </button>
-                   </p>
+                       <div *ngIf="sendEnabled" class="col-6" style="z-index: 99999999;">
+                         <app-grecaptcha [reset]="mailError" (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
+
+                       </div>
+
+                    </div>
+
+
                 </div>
 
                 <div class="container-right">
@@ -101,8 +109,8 @@
 
 
                     <div *ngIf="sendEnabled" class="col-12">
-                        <app-grecaptcha [reset]="mailError" (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
-                        <!-- <p class="text-left mt-2">
+<!--                         <app-grecaptcha [reset]="mailError" (error)="disableSend()" (resolved)="enableSend($event)"></app-grecaptcha>
+ -->                        <!-- <p class="text-left mt-2">
 
                             <button [disabled]="!sendEnabled" id='sendMail' (click)="sendMail()"  class="btn btn-mixer btn-lg">
                                <i class="fa fa-paper-plane fa-lg"></i> Invia

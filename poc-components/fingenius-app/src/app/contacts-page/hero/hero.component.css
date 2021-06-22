@@ -15,4 +15,33 @@
     font-size: 2.5rem;
 }
 
+.img-container {
+    width: 100%;
+    height: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    [class*="c-caption"] {
+        left: 10%;
+        font-size: 1.5rem;
+    }
+    .img-container{
+        width: 100%;
+        height: 250px;
+    }
+  }
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    [class*="c-caption"] {
+        left: 1%;
+        font-size: 1.5rem;
+    }
+
+    .img-container{
+        width: 100%;
+        height: 300px;
+    }
+  }
 

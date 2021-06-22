@@ -30,6 +30,7 @@ export class ContactFormComponent implements OnInit {
 
   incomplete: boolean  = false;
 
+
   constructor(private contentService: ContentServiceService) { }
 
   ngOnInit(): void {
@@ -49,11 +50,19 @@ export class ContactFormComponent implements OnInit {
     if((!this.name || !this.surname || !this.email || !this.message ) && !this.token){
       this.dirty=true;
       this.incomplete=true;
+      setTimeout(()=>{
+        this.scroll(null);
+
+      },500);
       return;
     }
     if((this.name && this.surname && this.email && this.message ) && !this.token){
       this.sendEnabled=true;
       this.dirty=false;
+      setTimeout(()=>{
+        this.scroll(null);
+
+      },500);
       return;
     }
 
@@ -74,20 +83,29 @@ export class ContactFormComponent implements OnInit {
             this.dirty=true;
           }).catch(err =>{
             this.mailError=true;
-          })
+            setTimeout(()=>{
+              this.scroll(null);
+
+            },500);          })
         }
         else{
           this.mailError=true;
           this.sendEnabled=true;
           this.dirty=false;
+          setTimeout(()=>{
+            this.scroll(null);
 
+          },500);
         }
       }).catch(err => {
         this.mailError=true;
         this.mailSent = false;
         this.sendEnabled=true;
         this.dirty=false;
-      });
+        setTimeout(()=>{
+          this.scroll(null);
+
+        },500);      });
     }
 
 
@@ -103,9 +121,17 @@ export class ContactFormComponent implements OnInit {
 
   }
 
-  scroll(el: HTMLElement) {
+  scroll(el: any) {
     console.log('request appointment', el);
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    if(!el){
+      const el2 = document.querySelector('#alert-box');
+      if(el2){
+        el2.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      return;
+
+    }
+    el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
 }

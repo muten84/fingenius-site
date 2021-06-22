@@ -7,7 +7,7 @@
 
                     <div id="logo">
 
-                        <a title="Fingenius Home" routerLink="/home" >
+                        <a title="Fingenius Home" routerLink="/contacts" >
                             <img width="120px" height="50px" src="assets/images/fingenius/img/Logo Fingenius.png" alt="Mixer">
                         </a>
 
@@ -49,10 +49,11 @@
                         <ul  class="clearfix" >
 
                             <ng-template ngFor let-item [ngForOf]="menuContent$ | async" let-i="index">
-                                <li (mouseleave)="mouseOut()" (mouseover)="mouseIn($event, item.childs)" ><a  routerLink={{item.link}}>{{item.title}}</a>
+                                <li (mouseleave)="mouseOut()" (mouseover)="mouseIn($event, item.childs)" ><a style="cursor: pointer;"(click)=scrollTo() >{{item.title}}</a>
                                     <ul [@slideInOut]="animationState" *ngIf="item.childs && item.childs.length > 0">
                                         <li *ngFor="let child of item.childs; index as i;">
-                                            <a routerLink={{child.link}}>{{child.title}}</a>
+                                            <!-- routerLink={{child.link}} routerLink={{item.link}}-->
+                                            <a (click)=scrollTo()>{{child.title}}</a>
                                         </li>
                                     </ul>
                                 </li>
