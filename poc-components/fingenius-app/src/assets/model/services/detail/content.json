@@ -1,0 +1,109 @@
+{
+    "services": [
+        {
+            "id": "ecobonus",
+            "title": "Eco Bonus",
+            "shortDescription": "Loer Ipsum short description",
+            "logo": "path/to/logo/image",
+            "icon": "pencil",
+            "subtitle": "Sottotitolo",
+
+            "longDescs": [
+                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
+                "Paragra2 ..asdasdasd adasd ",
+                "Paragra2 ..asdasdasd adasd "
+            ],
+            "sideDescs": [
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                }
+
+            ]
+        },
+        {
+            "id": "sismabonus",
+            "title": "Sisma Bonus",
+            "shortDescription": "Loer Ipsum short description",
+            "logo": "path/to/logo/image",
+            "icon": "pencil",
+            "subtitle": "Sottotitolo",
+
+            "longDescs": [
+                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
+                "Paragra2 ..asdasdasd adasd ",
+                "Paragra2 ..asdasdasd adasd "
+            ],
+            "sideDescs": [
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                }
+
+            ]
+        },
+        {
+            "id": "superbonus",
+            "title": "Super Bonus",
+            "shortDescription": "Loer Ipsum short description",
+            "logo": "path/to/logo/image",
+            "icon": "pencil",
+            "subtitle": "Sottotitolo",
+
+            "longDescs": [
+                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
+                "Paragra2 ..asdasdasd adasd ",
+                "Paragra2 ..asdasdasd adasd "
+            ],
+            "sideDescs": [
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                },
+                {
+                    "title": "Pro1",
+                    "icon": "rocket",
+                    "logo": "path/to/logo",
+                    "shortDesc": "Pro desc"
+                }
+
+            ]
+        }
+    ]
+}

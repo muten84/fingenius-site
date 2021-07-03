@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Project:  ComingSoon
-Version:  
-Last change:  
+Version:
+Last change:
 Assigned to:  Bach Le
-Primary use:  
+Primary use:
 -------------------------------------------------------------------*/
 
 
@@ -13,22 +13,22 @@ Primary use:
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Lato-Regular;
-  src: url('../fonts/Lato/Lato-Regular.ttf'); 
+  src: url('../fonts/Lato/Lato-Regular.ttf');
 }
 
 @font-face {
   font-family: Lato-Bold;
-  src: url('../fonts/Lato/Lato-Bold.ttf'); 
+  src: url('../fonts/Lato/Lato-Bold.ttf');
 }
 
 
@@ -321,7 +321,7 @@ input.input100 {
 /*//////////////////////////////////////////////////////////////////
 [ Background ]*/
 .bg0 {background-color: #fff;}
-.bg1 {background-color: #57b846;}
+.bg1 {background-color: rgb(226, 159, 25);}
 .bg3 {background-color: #3b5998;}
 .bg4 {background-color: #1da1f2;}
 .bg5 {background-color: #cd201f;}
@@ -351,7 +351,7 @@ input.input100 {
 }
 
 /*==================================================================
-   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE  
+   WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE WHERE
 ==================================================================*/
 .where1-parent {
   position: relative;
@@ -372,7 +372,7 @@ input.input100 {
 
 
 /*==================================================================
- HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW 
+ HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW HOW
 ==================================================================*/
 .how1 {
   border-radius: 50%;
@@ -466,7 +466,7 @@ input.input100 {
 .hov-bg0:hover {background-color: #fff;}
 /*---------------------------------------------*/
 .hov1:hover {
-  background-color: #555555;
+  background-color: #F2A251;
 }
 
 
@@ -618,7 +618,7 @@ input.input100 {
   .w-full-sm {width: 100%;}
   /*---------------------------------------------*/
 
-  
+
 }
 
 
@@ -644,4 +644,9 @@ input.input100 {
   .w-full-ssm {width: 100%;}
   /*---------------------------------------------*/
 
+}
+
+a:hover {
+  color: #302e25 !important;
+  text-decoration: underline;
 }

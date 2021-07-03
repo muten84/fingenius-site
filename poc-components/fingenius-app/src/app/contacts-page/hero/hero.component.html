@@ -2,7 +2,7 @@
   <ng-template ngbSlide *ngFor="let slide of slides$ | async">
     <div class="ml-auto mr-auto picsum-img-wrapper row no-gutters">
        <div class="col-12">
-        <a href="#"><img class="img-container" [src]="slide.image" alt="Slide"></a>
+        <a  [routerLink]="[''+slide.buttonLink]"><img class="img-container" [src]="slide.image" alt="Slide"></a>
 
       </div>
       <div class="c-caption mr-5">

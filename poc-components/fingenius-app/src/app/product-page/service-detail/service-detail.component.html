@@ -7,15 +7,13 @@
             <header>
 
                 <h1 class="page-title">
-                    AWESOME SERVICE </h1>
+                    {{content?.title}} </h1>
 
                 <div class="separator">
                     <span class="line"></span><span class="square"></span><span class="line"></span>
                 </div>
 
-                <p>We love good ideas, big challenges and forward thinking clients. If you have an interesting project —
-                    big or small — we’d love to collaborate with you. To discuss, simply drop us an email and we’ll be
-                    in touch. We’re always interested in hearing about new possibilities.</p>
+                <p> {{content?.shortDescription}}</p>
 
                 <div class="flex separator">
                     <span class="line"></span>
@@ -34,38 +32,13 @@
                 <article class="clearfix">
 
                     <div class="service-icon">
-                        <i class="fa fa-pencil"></i>
+                        <i [ngClass]="'fa fa-'+content?.icon"></i>
                     </div>
 
-                    <h2 class="title">Design</h2>
+                    <h2 class="title">{{content?.subtitle}}</h2>
 
-                    <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley
-                        of type and scrambled it to make a type specimen book.
-                        <br>
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of
-                        Letraset sheets containing.
-                    </p>
-
-                    <p>Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and
-                        scrambled it to make a type specimen book. It has survived not only five centuries, but
-                        also
-                        the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in
-                        the 1960s with the release of Letraset sheets containing.
-                    </p>
-
-                    <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley
-                        of type and scrambled it to make a type specimen book. Survived not only five centuries,
-                        but
-                        also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing.
+                    <p *ngFor="let par of content?.longDescs; index as i;">
+                        {{par}}
                     </p>
 
                 </article>
@@ -74,7 +47,19 @@
 
             <aside class="col-md-4  services-sidebar">
 
-                <section class="services-item clearfix">
+                <ng-template ngFor let-s [ngForOf]="content?.sideDescs" let-i="index">
+                    <section class="services-item clearfix">
+
+                        <i [ngClass]="'fa fa-'+s.icon"></i>
+
+                        <h3 class="title"><a href="">{{s.title}}</a></h3>
+
+                        <p>{{s.shortDesc}}</p>
+
+                    </section>
+                </ng-template>
+
+                <!-- <section class="services-item clearfix">
 
                     <i class="fa fa-rocket"></i>
 
@@ -102,7 +87,7 @@
 
                     <p>It was popularised in the 1960s with the release of Letraset sheets containing Ipsum. </p>
 
-                </section>
+                </section> -->
 
             </aside>
 

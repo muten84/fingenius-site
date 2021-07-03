@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {MenuContent, MenuList} from './model/menu-content';
 import {SlideItem} from './model/slides-content';
-import {map} from 'rxjs/operators'
+import {map, filter} from 'rxjs/operators'
 
 @Injectable({
   providedIn: 'root'
@@ -68,6 +68,24 @@ export class ContentServiceService {
        const menu : any =  val as any;
         return menu['about-us'];
       })
+
+    ).toPromise();
+  }
+
+  public getServiceById(id: string) : Promise<any> {
+    return this.httpClient.get('assets/model/services/detail/content.json').pipe(
+      map((val) => {
+       const menu : any =  val as any;
+       debugger;
+        return menu['services'].filter((e: { id: string; })=>{
+          debugger;
+          return e.id===id
+        });
+      }),
+      /* filter(e=>{
+        debugger;
+        return e.id===id
+      }) */
 
     ).toPromise();
   }
