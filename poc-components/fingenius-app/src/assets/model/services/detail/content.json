@@ -1,109 +1,103 @@
 {
-    "services": [
+  "services": [
+    {
+      "id": "ecobonus",
+      "title": "Eco Bonus",
+      "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
+      "logo": "path/to/logo/image",
+      "icon": "pencil",
+      "subtitle": "Sottotitolo",
+      "longDescs": [
+        "Puoi usufruire dell’agevolazione se sei un contribuente residente o non residente e possiedi un immobile a qualsiasi titolo, in particolare: Condomini, Persone fisiche che non esercitano impresa, Istituti case popolari (IACP), Cooperative di abitazioni, Onlus e associazioni sportive dilettantistiche.",
+        "Gli interventi che vengono realizzati, trainanti e trainati, devono complessivamente migliorare la classe energetica di 2 classi  o di 1 classe se l’immobile è già in  A3. I risultati verranno certificati con APE, prima degli interventi e dopo gli interventi.ci chiami e  possiamo gestire tutto quello che riguarda l’ecobonus a Verona e in tutta Italia, a partire dalle  valutazioni iniziali fino alla gestione del credito con gli istituti bancari accreditati.",
+        "Abbiamo i termotecnici, architetti, ingegneri e aziende qualificate per le opere da fare sugli immobili. Poi ci sono gli esperti fiscali, lo Studio composto da uno staff qualificato che prepara la parte documentale per gli asseveratori, presenti anche professionisti del credito per creare la finanza ponte per le aziende che fanno gli interventi e un team del credito per la gestione della parte economica dello sconto in fattura e cessione del credito."
+      ],
+      "sideDescs": [
         {
-            "id": "ecobonus",
-            "title": "Eco Bonuss",
-            "shortDescription": "Loer Ipsum short description",
-            "logo": "path/to/logo/image",
-            "icon": "pencil",
-            "subtitle": "Sottotitolo",
-
-            "longDescs": [
-                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
-                "Paragra2 ..asdasdasd adasd ",
-                "Paragra2 ..asdasdasd adasd "
-            ],
-            "sideDescs": [
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                }
-
-            ]
+          "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
         },
         {
-            "id": "sismabonus",
-            "title": "Sisma Bonus",
-            "shortDescription": "Loer Ipsum short description",
-            "logo": "path/to/logo/image",
-            "icon": "pencil",
-            "subtitle": "Sottotitolo",
-
-            "longDescs": [
-                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
-                "Paragra2 ..asdasdasd adasd ",
-                "Paragra2 ..asdasdasd adasd "
-            ],
-            "sideDescs": [
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                }
-
-            ]
+          "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
         },
         {
-            "id": "superbonus",
-            "title": "Super Bonus",
-            "shortDescription": "Loer Ipsum short description",
-            "logo": "path/to/logo/image",
-            "icon": "pencil",
-            "subtitle": "Sottotitolo",
-
-            "longDescs": [
-                "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.",
-                "Paragra2 ..asdasdasd adasd ",
-                "Paragra2 ..asdasdasd adasd "
-            ],
-            "sideDescs": [
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                },
-                {
-                    "title": "Pro1",
-                    "icon": "rocket",
-                    "logo": "path/to/logo",
-                    "shortDesc": "Pro desc"
-                }
-
-            ]
+          "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
         }
-    ]
+      ]
+    },
+    {
+      "id": "sismabonus",
+      "title": "Sisma Bonus",
+      "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
+      "logo": "path/to/logo/image",
+      "icon": "pencil",
+      "subtitle": "Sottotitolo",
+      "longDescs": [
+        "Il SismaBonus prevede detrazioni di imposta Irpef o Ires, dal 50 al 110% delle spese sostenute dal 1° Gennaio 2017 per realizzare interventi antisismici riguardanti lavori di ristrutturazione degli edifici predisposti ad adeguamento sismico presenti nelle zone sismiche 1, 2 e 3. Semplificando, il SismaBonus è un incentivo economico concesso dallo Stato Italiano per trattare la problematica della vulnerabilità sismica e rendere i propri edifici maggiormente resistenti e preparati ad un eventuale rischio sismico.",
+        "Le classi di rischio del patrimonio immobiliare vanno dalla classe A+ (più sicura e antisismica) alla classe G (meno antisismica). Ogni intervento che riguardi il passaggio a una o più classi di rischio sismico inferiore, prevede una relativa detrazione d’imposta. ",
+        "Abbiamo i termotecnici, architetti, ingegneri e aziende qualificate per le opere da fare sugli immobili. Poi ci sono gli esperti fiscali, lo Studio composto da uno staff qualificato che prepara la parte documentale per gli asseveratori, presenti anche professionisti del credito per creare la finanza ponte per le aziende che fanno gli interventi e un team del credito per la gestione della parte economica dello sconto in fattura e cessione del credito. "
+      ],
+      "sideDescs": [
+        {
+          "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        },
+        {
+          "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        },
+        {
+          "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        }
+      ]
+    },
+    {
+      "id": "superbonus",
+      "title": "Super Bonus",
+      "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
+      "logo": "path/to/logo/image",
+      "icon": "pencil",
+      "subtitle": "Sottotitolo",
+      "longDescs": [
+        "Il Superbonus è un’agevolazione prevista dal Decreto Rilancio che eleva al 110% l’aliquota di detrazione delle spese sostenute dal 1° luglio 2020 al 30 giugno 2022. Le nuove misure si aggiungono alle detrazioni previste per gli interventi di recupero del patrimonio edilizio, compresi quelli per la riduzione del rischio sismico (c.d. Sismabonus) e di riqualificazione energetica degli edifici (cd. Ecobonus).",
+        "Tra le novità introdotte, è prevista la possibilità, al posto della fruizione diretta della detrazione, di optare per un contributo anticipato sotto forma di sconto praticato  dai fornitori dei beni o servizi o, in alternativa, per la cessione del credito corrispondente alla detrazione spettante. In questo caso si dovrà inviare una comunicazione per esercitare l’opzione. Il modello da compilare e inviare online è quello approvato con il provvedimento del 12 ottobre 2020. ",
+        "Abbiamo i termotecnici, architetti, ingegneri e aziende qualificate per le opere da fare sugli immobili. Poi ci sono gli esperti fiscali, lo Studio composto da uno staff qualificato che prepara la parte documentale per gli asseveratori, presenti anche professionisti del credito per creare la finanza ponte per le aziende che fanno gli interventi e un team del credito per la gestione della parte economica dello sconto in fattura e cessione del credito."
+      ],
+      "sideDescs": [
+        {
+          "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        },
+        {
+          "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        },
+        {
+          "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
+          "icon": "rocket",
+          "logo": "path/to/logo",
+          "shortDesc": "Pro desc"
+        }
+      ]
+    }
+  ]
 }
