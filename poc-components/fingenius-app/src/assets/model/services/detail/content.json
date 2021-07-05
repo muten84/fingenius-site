@@ -2,7 +2,7 @@
     "services": [
         {
             "id": "ecobonus",
-            "title": "Eco Bonus",
+            "title": "Eco Bonuss",
             "shortDescription": "Loer Ipsum short description",
             "logo": "path/to/logo/image",
             "icon": "pencil",
