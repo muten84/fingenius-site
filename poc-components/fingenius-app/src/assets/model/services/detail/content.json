@@ -5,8 +5,8 @@
       "title": "Eco Bonus",
       "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
       "logo": "path/to/logo/image",
-      "icon": "pencil",
-      "subtitle": "Sottotitolo",
+      "icon": "info",
+      "subtitle": "Detrazione fiscale Irpef ed Ires, concessa per i lavori di riqualificazione energetica degli edifici esistenti",
       "longDescs": [
         "Puoi usufruire dell’agevolazione se sei un contribuente residente o non residente e possiedi un immobile a qualsiasi titolo, in particolare: Condomini, Persone fisiche che non esercitano impresa, Istituti case popolari (IACP), Cooperative di abitazioni, Onlus e associazioni sportive dilettantistiche.",
         "Gli interventi che vengono realizzati, trainanti e trainati, devono complessivamente migliorare la classe energetica di 2 classi  o di 1 classe se l’immobile è già in  A3. I risultati verranno certificati con APE, prima degli interventi e dopo gli interventi.ci chiami e  possiamo gestire tutto quello che riguarda l’ecobonus a Verona e in tutta Italia, a partire dalle  valutazioni iniziali fino alla gestione del credito con gli istituti bancari accreditati.",
@@ -15,21 +15,21 @@
       "sideDescs": [
         {
           "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
-          "icon": "rocket",
+          "icon": "hand-peace-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
-          "icon": "rocket",
+          "icon": "yelp",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
-          "icon": "rocket",
+          "icon": "handshake-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         }
       ]
     },
@@ -38,8 +38,8 @@
       "title": "Sisma Bonus",
       "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
       "logo": "path/to/logo/image",
-      "icon": "pencil",
-      "subtitle": "Sottotitolo",
+      "icon": "info",
+      "subtitle": "Detrazione delle spese sostenute per gli interventi antisismici",
       "longDescs": [
         "Il SismaBonus prevede detrazioni di imposta Irpef o Ires, dal 50 al 110% delle spese sostenute dal 1° Gennaio 2017 per realizzare interventi antisismici riguardanti lavori di ristrutturazione degli edifici predisposti ad adeguamento sismico presenti nelle zone sismiche 1, 2 e 3. Semplificando, il SismaBonus è un incentivo economico concesso dallo Stato Italiano per trattare la problematica della vulnerabilità sismica e rendere i propri edifici maggiormente resistenti e preparati ad un eventuale rischio sismico.",
         "Le classi di rischio del patrimonio immobiliare vanno dalla classe A+ (più sicura e antisismica) alla classe G (meno antisismica). Ogni intervento che riguardi il passaggio a una o più classi di rischio sismico inferiore, prevede una relativa detrazione d’imposta. ",
@@ -48,21 +48,21 @@
       "sideDescs": [
         {
           "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
-          "icon": "rocket",
+          "icon": "hand-peace-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
-          "icon": "rocket",
+          "icon": "yelp",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
-          "icon": "rocket",
+          "icon": "handshake-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         }
       ]
     },
@@ -71,8 +71,8 @@
       "title": "Super Bonus",
       "shortDescription": "Ti supportiamo nella gestione completa dell’ecobonus, con lo sconto in fattura: Gestione tecnica, finanziaria, bancaria ed edilizia",
       "logo": "path/to/logo/image",
-      "icon": "pencil",
-      "subtitle": "Sottotitolo",
+      "icon": "info",
+      "subtitle": "Eleva al 110% l’aliquota di detrazione delle spese sostenute ",
       "longDescs": [
         "Il Superbonus è un’agevolazione prevista dal Decreto Rilancio che eleva al 110% l’aliquota di detrazione delle spese sostenute dal 1° luglio 2020 al 30 giugno 2022. Le nuove misure si aggiungono alle detrazioni previste per gli interventi di recupero del patrimonio edilizio, compresi quelli per la riduzione del rischio sismico (c.d. Sismabonus) e di riqualificazione energetica degli edifici (cd. Ecobonus).",
         "Tra le novità introdotte, è prevista la possibilità, al posto della fruizione diretta della detrazione, di optare per un contributo anticipato sotto forma di sconto praticato  dai fornitori dei beni o servizi o, in alternativa, per la cessione del credito corrispondente alla detrazione spettante. In questo caso si dovrà inviare una comunicazione per esercitare l’opzione. Il modello da compilare e inviare online è quello approvato con il provvedimento del 12 ottobre 2020. ",
@@ -81,21 +81,21 @@
       "sideDescs": [
         {
           "title": "Ti aiutiamo a trovare la soluzione migliore adatta alle tue esigenze!",
-          "icon": "rocket",
+          "icon": "hand-peace-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Ti seguiamo passo passo durante tutto l'iter di gestione lavori!",
-          "icon": "rocket",
+          "icon": "yelp",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         },
         {
           "title": "Gestiamo la tua pratica fino alla parte economica dello sconto in fattura e cessione del credito!",
-          "icon": "rocket",
+          "icon": "handshake-o",
           "logo": "path/to/logo",
-          "shortDesc": "Pro desc"
+          "shortDesc": ""
         }
       ]
     }
